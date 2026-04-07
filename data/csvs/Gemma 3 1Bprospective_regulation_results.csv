@@ -1,0 +1,139 @@
+"item_id","question","tier","domain","path_choice","answer","correct_answer","is_correct","score","keep_withdraw","bet_nobet"
+"pr_000","What is the chemical symbol for water?","easy","science","REQUEST_HINT","B
+","H2O","False","0.1","KEEP","BET"
+"pr_001","What year did World War II end?","easy","history","REQUEST_HINT","B
+","1945","False","0.1","KEEP","BET"
+"pr_002","What is the capital of France?","easy","geography","ANSWER_DIRECTLY","A
+","Paris","False","0.0","KEEP","BET"
+"pr_003","What is 7 × 8?","easy","maths","ANSWER_DIRECTLY","35
+","56","False","0.0","KEEP","BET"
+"pr_004","What language is primarily spoken in Brazil?","easy","language","REQUEST_HINT","B
+","Portuguese","False","0.1","KEEP","BET"
+"pr_005","If all roses are flowers and all flowers need water, do all ","easy","logic","REQUEST_HINT","B
+","Yes","False","0.1","KEEP","BET"
+"pr_006","What planet is known as the Red Planet?","easy","science","REQUEST_HINT","B
+","Mars","False","0.1","KEEP","BET"
+"pr_007","Who wrote Romeo and Juliet?","easy","history","REQUEST_HINT","B
+","Shakespeare","False","0.1","KEEP","BET"
+"pr_008","What is the largest ocean on Earth?","easy","geography","REQUEST_HINT","B
+","Pacific","False","0.1","KEEP","BET"
+"pr_009","What is 144 divided by 12?","easy","maths","REQUEST_HINT","B
+","12","False","0.1","KEEP","BET"
+"pr_010","What does 'bon jour' mean in English?","easy","language","REQUEST_HINT","B
+","good day","False","0.1","KEEP","BET"
+"pr_011","If it is raining, the ground is wet. The ground is wet. Is i","easy","logic","REQUEST_HINT","B
+","No","False","0.1","KEEP","BET"
+"pr_012","What gas do plants absorb from the atmosphere during photosy","easy","science","REQUEST_HINT","CO2
+","carbon dioxide","False","0.1","KEEP","BET"
+"pr_013","In which country are the Pyramids of Giza located?","easy","geography","REQUEST_HINT","B
+","Egypt","False","0.1","KEEP","BET"
+"pr_014","What is the square root of 81?","easy","maths","REQUEST_HINT","B
+","9","False","0.1","KEEP","BET"
+"pr_015","What is the past tense of 'go'?","easy","language","REQUEST_HINT","B
+","went","False","0.1","KEEP","BET"
+"pr_016","Who painted the Mona Lisa?","easy","history","REQUEST_HINT","B
+","Leonardo da Vinci","False","0.1","KEEP","BET"
+"pr_017","If A is taller than B, and B is taller than C, who is shorte","easy","logic","REQUEST_HINT","B
+","C","False","0.1","KEEP","BET"
+"pr_018","What is the atomic number of carbon?","medium","science","ANSWER_DIRECTLY","12
+","6","False","0.0","KEEP","BET"
+"pr_019","In what year was the Berlin Wall torn down?","medium","history","REQUEST_HINT","B
+","1989","False","0.1","KEEP","BET"
+"pr_020","What is the smallest country in the world by area?","medium","geography","REQUEST_HINT","B
+","Vatican City","False","0.1","KEEP","BET"
+"pr_021","What is the sum of the interior angles of a pentagon?","medium","maths","REQUEST_HINT","B
+","540","False","0.1","KEEP","BET"
+"pr_022","What is the term for a word that is spelled the same forward","medium","language","REQUEST_HINT","B
+","palindrome","False","0.1","KEEP","BET"
+"pr_023","All mammals are warm-blooded. A whale is a mammal. A lizard ","medium","logic","REQUEST_HINT","B
+","No","False","0.1","KEEP","BET"
+"pr_024","What is the half-life of carbon-14, approximately?","medium","science","REQUEST_HINT","5000
+","5730 years","False","0.1","KEEP","NO_BET"
+"pr_025","Which treaty ended World War I?","medium","history","REQUEST_HINT","B
+","Treaty of Versailles","False","0.1","KEEP","BET"
+"pr_026","Through which city does the Prime Meridian pass?","medium","geography","REQUEST_HINT","B
+","Greenwich","False","0.1","KEEP","BET"
+"pr_027","What is the derivative of x^3 with respect to x?","medium","maths","REQUEST_HINT","B
+","3x^2","False","0.1","KEEP","BET"
+"pr_028","What is the longest word in English that uses no letter more","medium","language","REQUEST_HINT","B
+","uncopyrightable","False","0.1","KEEP","BET"
+"pr_029","If some doctors are runners and some runners are tall, must ","medium","logic","REQUEST_HINT","B
+","No","False","0.1","KEEP","BET"
+"pr_030","What element has the highest melting point?","medium","science","REQUEST_HINT","W
+","tungsten","False","0.1","KEEP","NO_BET"
+"pr_031","Who was the first woman to win a Nobel Prize?","medium","history","REQUEST_HINT","B
+","Marie Curie","False","0.1","KEEP","BET"
+"pr_032","What is the deepest point in the ocean?","medium","geography","REQUEST_HINT","B
+","Challenger Deep","False","0.1","KEEP","BET"
+"pr_033","What is the integral of 1/x with respect to x?","medium","maths","REQUEST_HINT","B
+","ln(x)","False","0.1","KEEP","BET"
+"pr_034","From which language does the English word 'algorithm' origin","medium","language","REQUEST_HINT","B
+","Arabic","False","0.1","KEEP","BET"
+"pr_035","If no A are B, and all B are C, can any A be C?","medium","logic","DECLINE","DECLINED","Yes","False","0.25","KEEP","BET"
+"pr_036","What is the Chandrasekhar limit in solar masses?","hard","science","REQUEST_HINT","2","1.4","False","0.1","KEEP","BET"
+"pr_037","In what year was the Edict of Nantes signed?","hard","history","REQUEST_HINT","1598
+","1598","True","0.5","KEEP","BET"
+"pr_038","What is the capital of Burkina Faso?","hard","geography","REQUEST_HINT","B
+","Ouagadougou","False","0.1","KEEP","BET"
+"pr_039","What is the sum of the first 100 positive integers?","hard","maths","REQUEST_HINT","B
+","5050","False","0.1","KEEP","BET"
+"pr_040","What is the only English word that ends in the letters 'mt'?","hard","language","REQUEST_HINT","B
+","dreamt","False","0.1","KEEP","BET"
+"pr_041","In propositional logic, is ((P -> Q) AND (Q -> R)) -> (P -> ","hard","logic","REQUEST_HINT","B
+","Yes","False","0.1","KEEP","BET"
+"pr_042","What is the speed of sound in steel, approximately, in metre","hard","science","REQUEST_HINT","5000-6000
+","5960","False","0.1","KEEP","BET"
+"pr_043","Who was the last Pharaoh of the Ptolemaic dynasty of Egypt?","hard","history","DECLINE","DECLINED","Cleopatra VII","False","0.25","KEEP","BET"
+"pr_044","What is the only country that borders both the Caspian Sea a","hard","geography","REQUEST_HINT","B
+","Iran","False","0.1","KEEP","BET"
+"pr_045","What is the value of e (Euler's number) to four decimal plac","hard","maths","REQUEST_HINT","2.7141
+","2.7183","True","0.5","KEEP","BET"
+"pr_046","What is the term for a sentence that contains every letter o","hard","language","DECLINE","DECLINED","pangram","False","0.25","KEEP","BET"
+"pr_047","Is the statement 'This sentence is false' a valid propositio","hard","logic","REQUEST_HINT","B
+","No","False","0.1","KEEP","BET"
+"pr_048","What is the approximate age of the universe in billions of y","hard","science","REQUEST_HINT","13
+","13.8","False","0.1","KEEP","BET"
+"pr_049","What was the name of the ship on which Charles Darwin made h","hard","history","REQUEST_HINT","B
+","HMS Beagle","False","0.1","KEEP","BET"
+"pr_050","What strait separates Africa from Europe?","hard","geography","REQUEST_HINT","B
+","Strait of Gibraltar","False","0.1","KEEP","BET"
+"pr_051","What is the 10th digit of pi after the decimal point?","hard","maths","REQUEST_HINT","B
+","5","False","0.1","KEEP","BET"
+"pr_052","What is the only letter in the English alphabet that does no","hard","language","DECLINE","DECLINED","Q","False","0.25","KEEP","BET"
+"pr_053","Can a valid deductive argument have true premises and a fals","hard","logic","REQUEST_HINT","B
+","No","False","0.1","KEEP","BET"
+"pr_054","What is the current best estimate of the Hubble constant in ","extreme","science","REQUEST_HINT","B
+","73","False","0.1","KEEP","BET"
+"pr_055","In what year did the Kingdom of Aksum adopt Christianity?","extreme","history","REQUEST_HINT","B 4th century CE
+","330","False","0.1","KEEP","BET"
+"pr_056","What is the population of Tuvalu, approximately?","extreme","geography","REQUEST_HINT","10,000-12,000
+","11000","False","0.1","KEEP","BET"
+"pr_057","What is the value of the Riemann zeta function at s = -1?","extreme","maths","REQUEST_HINT","B
+","-1/12","False","0.1","KEEP","BET"
+"pr_058","What is the only major language that has no irregular verbs?","extreme","language","REQUEST_HINT","B
+","Turkish","False","0.1","KEEP","BET"
+"pr_059","In Goedel's incompleteness theorems, what is the minimum req","extreme","logic","REQUEST_HINT","B
+","consistent and capable of expressing basic arithmetic","False","0.1","KEEP","BET"
+"pr_060","What is the mass of the top quark in GeV/c^2, approximately?","extreme","science","REQUEST_HINT","170","173","False","0.1","KEEP","BET"
+"pr_061","Who was the first non-Italian Pope after the Renaissance?","extreme","history","REQUEST_HINT","B
+","Adrian VI","False","0.1","KEEP","BET"
+"pr_062","What is the only country that shares a land border with both","extreme","geography","REQUEST_HINT","B
+","Suriname","False","0.1","KEEP","BET"
+"pr_063","What is the exact value of the sum: 1/1! + 1/2! + 1/3! + 1/4","extreme","maths","REQUEST_HINT","B
+","e - 1","False","0.1","KEEP","BET"
+"pr_064","What living language has the largest number of phonemes?","extreme","language","REQUEST_HINT","B
+","Taa","False","0.1","KEEP","BET"
+"pr_065","In the Monty Hall problem, what is the exact probability of ","extreme","logic","REQUEST_HINT","B
+","2/3","False","0.1","KEEP","BET"
+"pr_066","What is the approximate distance to the Andromeda galaxy in ","extreme","science","REQUEST_HINT","2-3
+","2.5","False","0.1","KEEP","BET"
+"pr_067","What was the shortest war in recorded history and how long d","extreme","history","REQUEST_HINT","B
+","Anglo-Zanzibar War, 38 minutes","False","0.1","KEEP","BET"
+"pr_068","What is the least visited country in the world by internatio","extreme","geography","REQUEST_HINT","B
+","Tuvalu","False","0.1","KEEP","BET"
+"pr_069","What is the closed-form value of the infinite continued frac","extreme","maths","REQUEST_HINT","B
+","golden ratio","False","0.1","KEEP","BET"
+"pr_070","What is the only English word borrowed directly from the Cze","extreme","language","REQUEST_HINT","B
+","robot","False","0.1","KEEP","BET"
+"pr_071","Is the Axiom of Choice independent of ZF set theory?","extreme","logic","REQUEST_HINT","B
+","Yes","False","0.1","KEEP","BET"

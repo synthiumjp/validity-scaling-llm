@@ -1,0 +1,136 @@
+"item_id","question","tier","domain","path_choice","answer","correct_answer","is_correct","score","keep_withdraw","bet_nobet"
+"pr_000","What is the chemical symbol for water?","easy","science","ANSWER_DIRECTLY","H₂O","H2O","False","0.0","KEEP","BET"
+"pr_001","What year did World War II end?","easy","history","ANSWER_DIRECTLY","1945","1945","True","1.0","KEEP","BET"
+"pr_002","What is the capital of France?","easy","geography","ANSWER_DIRECTLY","Paris","Paris","True","1.0","KEEP","BET"
+"pr_003","What is 7 × 8?","easy","maths","ANSWER_DIRECTLY","56","56","True","1.0","KEEP","BET"
+"pr_004","What language is primarily spoken in Brazil?","easy","language","ANSWER_DIRECTLY","Portuguese is the primary language spoken in Brazil.","Portuguese","True","1.0","KEEP","BET"
+"pr_005","If all roses are flowers and all flowers need water, do all ","easy","logic","ANSWER_DIRECTLY","Yes, all roses need water.
+
+This follows from basic logical deduction (transitive property):
+- All r","Yes","True","1.0","KEEP","BET"
+"pr_006","What planet is known as the Red Planet?","easy","science","ANSWER_DIRECTLY","Mars is known as the Red Planet.","Mars","True","1.0","KEEP","BET"
+"pr_007","Who wrote Romeo and Juliet?","easy","history","ANSWER_DIRECTLY","William Shakespeare wrote Romeo and Juliet.","Shakespeare","True","1.0","KEEP","BET"
+"pr_008","What is the largest ocean on Earth?","easy","geography","ANSWER_DIRECTLY","The Pacific Ocean is the largest ocean on Earth.","Pacific","True","1.0","KEEP","BET"
+"pr_009","What is 144 divided by 12?","easy","maths","ANSWER_DIRECTLY","12","12","True","1.0","KEEP","BET"
+"pr_010","What does 'bon jour' mean in English?","easy","language","ANSWER_DIRECTLY","""Bon jour"" means ""good day"" or ""hello"" in English. It's a French greeting used to say hello during t","good day","True","1.0","KEEP","BET"
+"pr_011","If it is raining, the ground is wet. The ground is wet. Is i","easy","logic","ANSWER_DIRECTLY","No. The ground being wet does not definitely mean it is raining. This commits the logical fallacy of","No","True","1.0","KEEP","BET"
+"pr_012","What gas do plants absorb from the atmosphere during photosy","easy","science","ANSWER_DIRECTLY","Carbon dioxide (CO₂)","carbon dioxide","True","1.0","KEEP","BET"
+"pr_013","In which country are the Pyramids of Giza located?","easy","geography","ANSWER_DIRECTLY","Egypt","Egypt","True","1.0","KEEP","BET"
+"pr_014","What is the square root of 81?","easy","maths","ANSWER_DIRECTLY","The square root of 81 is **9**.","9","True","1.0","KEEP","BET"
+"pr_015","What is the past tense of 'go'?","easy","language","ANSWER_DIRECTLY","The past tense of 'go' is **went**.","went","True","1.0","KEEP","BET"
+"pr_016","Who painted the Mona Lisa?","easy","history","ANSWER_DIRECTLY","Leonardo da Vinci painted the Mona Lisa. He created this iconic portrait in the early 16th century (","Leonardo da Vinci","True","1.0","KEEP","BET"
+"pr_017","If A is taller than B, and B is taller than C, who is shorte","easy","logic","ANSWER_DIRECTLY","C is shortest.
+
+From the given statements:
+- A > B (A is taller than B)
+- B > C (B is taller than C)","C","True","1.0","KEEP","BET"
+"pr_018","What is the atomic number of carbon?","medium","science","ANSWER_DIRECTLY","The atomic number of carbon is 6.","6","True","1.0","KEEP","BET"
+"pr_019","In what year was the Berlin Wall torn down?","medium","history","ANSWER_DIRECTLY","1989","1989","True","1.0","KEEP","BET"
+"pr_020","What is the smallest country in the world by area?","medium","geography","ANSWER_DIRECTLY","Vatican City is the smallest country in the world by area, at approximately 0.44 square kilometers (","Vatican City","True","1.0","KEEP","BET"
+"pr_021","What is the sum of the interior angles of a pentagon?","medium","maths","ANSWER_DIRECTLY","The sum of the interior angles of a pentagon is **540°**.
+
+This can be calculated using the formula:","540","True","1.0","KEEP","BET"
+"pr_022","What is the term for a word that is spelled the same forward","medium","language","ANSWER_DIRECTLY","Palindrome","palindrome","True","1.0","KEEP","BET"
+"pr_023","All mammals are warm-blooded. A whale is a mammal. A lizard ","medium","logic","ANSWER_DIRECTLY","No, a lizard is not a mammal.
+
+Since all mammals are warm-blooded and a lizard is cold-blooded, a li","No","True","1.0","KEEP","BET"
+"pr_024","What is the half-life of carbon-14, approximately?","medium","science","ANSWER_DIRECTLY","The half-life of carbon-14 is approximately 5,730 years.","5730 years","False","0.0","KEEP","BET"
+"pr_025","Which treaty ended World War I?","medium","history","ANSWER_DIRECTLY","The Treaty of Versailles, signed on June 28, 1919, ended World War I.","Treaty of Versailles","True","1.0","KEEP","BET"
+"pr_026","Through which city does the Prime Meridian pass?","medium","geography","ANSWER_DIRECTLY","Greenwich, London, England.
+
+The Prime Meridian (0° longitude) passes through Greenwich, a district ","Greenwich","True","1.0","KEEP","BET"
+"pr_027","What is the derivative of x^3 with respect to x?","medium","maths","ANSWER_DIRECTLY","The derivative of x^3 with respect to x is **3x^2**.
+
+Using the power rule: d/dx(x^n) = nx^(n-1), we","3x^2","True","1.0","KEEP","BET"
+"pr_028","What is the longest word in English that uses no letter more","medium","language","REQUEST_HINT","UNCOPYRIGHTABLE
+
+This 15-letter word means ""not able to be copyrighted"" and uses each of its letters","uncopyrightable","True","0.5","WITHDRAW","NO_BET"
+"pr_029","If some doctors are runners and some runners are tall, must ","medium","logic","REQUEST_HINT","No, some doctors do not necessarily have to be tall.
+
+The hint clarifies the issue: while some docto","No","True","0.5","KEEP","NO_BET"
+"pr_030","What element has the highest melting point?","medium","science","ANSWER_DIRECTLY","Carbon (in the form of graphite) has the highest melting point of any element at approximately 3,650","tungsten","True","1.0","WITHDRAW","NO_BET"
+"pr_031","Who was the first woman to win a Nobel Prize?","medium","history","ANSWER_DIRECTLY","Marie Curie was the first woman to win a Nobel Prize. She won the Nobel Prize in Physics in 1903 (sh","Marie Curie","True","1.0","KEEP","BET"
+"pr_032","What is the deepest point in the ocean?","medium","geography","ANSWER_DIRECTLY","The deepest point in the ocean is the Challenger Deep in the Mariana Trench, located in the western ","Challenger Deep","True","1.0","KEEP","BET"
+"pr_033","What is the integral of 1/x with respect to x?","medium","maths","ANSWER_DIRECTLY","The integral of 1/x with respect to x is:
+
+∫(1/x)dx = ln|x| + C
+
+where ln denotes the natural logari","ln(x)","False","0.0","KEEP","BET"
+"pr_034","From which language does the English word 'algorithm' origin","medium","language","ANSWER_DIRECTLY","The English word 'algorithm' originates from **Arabic**. It comes from the name of the Persian mathe","Arabic","True","1.0","KEEP","BET"
+"pr_035","If no A are B, and all B are C, can any A be C?","medium","logic","ANSWER_DIRECTLY","Yes, some A can be C.
+
+The premises tell us:
+- No A are B (A and B don't overlap)
+- All B are C (B i","Yes","True","1.0","KEEP","NO_BET"
+"pr_036","What is the Chandrasekhar limit in solar masses?","hard","science","ANSWER_DIRECTLY","The Chandrasekhar limit is approximately **1.4 solar masses**.
+
+This is the maximum mass of a stable","1.4","True","1.0","KEEP","BET"
+"pr_037","In what year was the Edict of Nantes signed?","hard","history","ANSWER_DIRECTLY","The Edict of Nantes was signed in 1598.","1598","True","1.0","KEEP","BET"
+"pr_038","What is the capital of Burkina Faso?","hard","geography","ANSWER_DIRECTLY","Ouagadougou","Ouagadougou","True","1.0","KEEP","BET"
+"pr_039","What is the sum of the first 100 positive integers?","hard","maths","ANSWER_DIRECTLY","The sum of the first 100 positive integers is **5,050**.
+
+This can be calculated using the formula: ","5050","False","0.0","KEEP","BET"
+"pr_040","What is the only English word that ends in the letters 'mt'?","hard","language","ANSWER_DIRECTLY","The answer is **alment**.
+
+Actually, I should reconsider. A more common word that ends in 'mt' is **","dreamt","True","1.0","WITHDRAW","NO_BET"
+"pr_041","In propositional logic, is ((P -> Q) AND (Q -> R)) -> (P -> ","hard","logic","ANSWER_DIRECTLY","Yes, this is a tautology.
+
+This formula represents the transitive property of implication. It states","Yes","True","1.0","KEEP","BET"
+"pr_042","What is the speed of sound in steel, approximately, in metre","hard","science","ANSWER_DIRECTLY","The speed of sound in steel is approximately **5,000 metres per second** (or 5,000 m/s).
+
+More preci","5960","False","0.0","KEEP","BET"
+"pr_043","Who was the last Pharaoh of the Ptolemaic dynasty of Egypt?","hard","history","ANSWER_DIRECTLY","Cleopatra VII was the last Pharaoh of the Ptolemaic dynasty of Egypt. She ruled from 51-30 BCE and d","Cleopatra VII","True","1.0","KEEP","BET"
+"pr_044","What is the only country that borders both the Caspian Sea a","hard","geography","ANSWER_DIRECTLY","Iran is the only country that borders both the Caspian Sea and the Persian Gulf.","Iran","True","1.0","KEEP","BET"
+"pr_045","What is the value of e (Euler's number) to four decimal plac","hard","maths","ANSWER_DIRECTLY","e = 2.7183","2.7183","True","1.0","KEEP","BET"
+"pr_046","What is the term for a sentence that contains every letter o","hard","language","ANSWER_DIRECTLY","A pangram.","pangram","True","1.0","KEEP","BET"
+"pr_047","Is the statement 'This sentence is false' a valid propositio","hard","logic","REQUEST_HINT","No. In classical logic, a valid proposition must be either true or false. ""This sentence is false"" i","No","True","0.5","KEEP","NO_BET"
+"pr_048","What is the approximate age of the universe in billions of y","hard","science","ANSWER_DIRECTLY","The universe is approximately **13.8 billion years old**.","13.8","True","1.0","KEEP","BET"
+"pr_049","What was the name of the ship on which Charles Darwin made h","hard","history","ANSWER_DIRECTLY","The HMS Beagle.","HMS Beagle","True","1.0","KEEP","BET"
+"pr_050","What strait separates Africa from Europe?","hard","geography","ANSWER_DIRECTLY","The Strait of Gibraltar separates Africa from Europe, connecting the Mediterranean Sea to the Atlant","Strait of Gibraltar","True","1.0","KEEP","BET"
+"pr_051","What is the 10th digit of pi after the decimal point?","hard","maths","REQUEST_HINT","The 10th digit of pi after the decimal point is **5**.
+
+Pi = 3.1415926535...
+Counting after the deci","5","True","0.5","KEEP","NO_BET"
+"pr_052","What is the only letter in the English alphabet that does no","hard","language","ANSWER_DIRECTLY","The letter **Q** does not appear in any U.S. state name.","Q","True","1.0","KEEP","NO_BET"
+"pr_053","Can a valid deductive argument have true premises and a fals","hard","logic","ANSWER_DIRECTLY","No. By definition, a valid deductive argument is one where if the premises are true, the conclusion ","No","True","1.0","KEEP","BET"
+"pr_054","What is the current best estimate of the Hubble constant in ","extreme","science","REQUEST_HINT","The current best estimate of the Hubble constant is approximately **73 km/s/Mpc** based on late-univ","73","True","0.5","KEEP","NO_BET"
+"pr_055","In what year did the Kingdom of Aksum adopt Christianity?","extreme","history","ANSWER_DIRECTLY","The Kingdom of Aksum officially adopted Christianity in the 4th century, most commonly dated to arou","330","True","1.0","KEEP","NO_BET"
+"pr_056","What is the population of Tuvalu, approximately?","extreme","geography","ANSWER_DIRECTLY","Approximately 12,000-13,000 people. Tuvalu is one of the least populous countries in the world, with","11000","False","0.0","KEEP","NO_BET"
+"pr_057","What is the value of the Riemann zeta function at s = -1?","extreme","maths","ANSWER_DIRECTLY","The value of the Riemann zeta function at s = -1 is:
+
+$$\zeta(-1) = -\frac{1}{12}$$
+
+This result com","-1/12","True","1.0","KEEP","BET"
+"pr_058","What is the only major language that has no irregular verbs?","extreme","language","REQUEST_HINT","Turkish
+
+Turkish is an agglutinative language spoken in Anatolia that is known for having a highly r","Turkish","True","0.5","WITHDRAW","NO_BET"
+"pr_059","In Goedel's incompleteness theorems, what is the minimum req","extreme","logic","ANSWER_DIRECTLY","The formal system must be:
+
+1. **Consistent** — it cannot derive contradictions
+2. **Effective/Decid","consistent and capable of expressing basic arithmetic","False","0.0","KEEP","BET"
+"pr_060","What is the mass of the top quark in GeV/c^2, approximately?","extreme","science","ANSWER_DIRECTLY","The top quark has a mass of approximately **173 GeV/c²**.","173","True","1.0","KEEP","BET"
+"pr_061","Who was the first non-Italian Pope after the Renaissance?","extreme","history","REQUEST_HINT","Pope Adrian VI (1522-1523) from the Netherlands was the first non-Italian Pope after the Renaissance","Adrian VI","True","0.5","KEEP","BET"
+"pr_062","What is the only country that shares a land border with both","extreme","geography","DECLINE","DECLINED","Suriname","False","0.25","KEEP","BET"
+"pr_063","What is the exact value of the sum: 1/1! + 1/2! + 1/3! + 1/4","extreme","maths","ANSWER_DIRECTLY","The exact value is **e - 1**, where e is Euler's number (approximately 2.71828).
+
+This follows from ","e - 1","True","1.0","KEEP","BET"
+"pr_064","What living language has the largest number of phonemes?","extreme","language","REQUEST_HINT","!Xóõ (or ǃXóõ)
+
+This Khoisan language spoken in Botswana has over 100 phonemes, including numerous c","Taa","False","0.1","KEEP","NO_BET"
+"pr_065","In the Monty Hall problem, what is the exact probability of ","extreme","logic","ANSWER_DIRECTLY","The exact probability of winning if you always switch in the Monty Hall problem is **2/3** (approxim","2/3","True","1.0","KEEP","BET"
+"pr_066","What is the approximate distance to the Andromeda galaxy in ","extreme","science","ANSWER_DIRECTLY","The Andromeda galaxy is approximately **2.5 million light-years** away from Earth.","2.5","True","1.0","KEEP","BET"
+"pr_067","What was the shortest war in recorded history and how long d","extreme","history","ANSWER_DIRECTLY","The Anglo-Zanzibar War (August 27, 1896) is widely recognized as the shortest war in recorded histor","Anglo-Zanzibar War, 38 minutes","False","0.0","KEEP","BET"
+"pr_068","What is the least visited country in the world by internatio","extreme","geography","REQUEST_HINT","Tuvalu
+
+This small Pacific island nation typically receives fewer than 2,000 international tourist a","Tuvalu","True","0.5","KEEP","NO_BET"
+"pr_069","What is the closed-form value of the infinite continued frac","extreme","maths","ANSWER_DIRECTLY","Let x = 1 + 1/(1 + 1/(1 + 1/(...)))
+
+Since the continued fraction is infinite and self-similar:
+x = ","golden ratio","True","1.0","KEEP","BET"
+"pr_070","What is the only English word borrowed directly from the Cze","extreme","language","REQUEST_HINT","Robot
+
+(The word ""robot"" comes from the Czech word ""robota"" (forced labor), coined by Karel Čapek in","robot","True","0.5","KEEP","BET"
+"pr_071","Is the Axiom of Choice independent of ZF set theory?","extreme","logic","ANSWER_DIRECTLY","Yes, the Axiom of Choice is independent of ZF set theory.
+
+This means:
+- ZF cannot prove the Axiom o","Yes","True","1.0","KEEP","BET"

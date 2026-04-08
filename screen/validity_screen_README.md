@@ -2,9 +2,24 @@
 
 **Validity screening protocol for LLM confidence signals.**
 
+[![PyPI](https://img.shields.io/pypi/v/validity-screen)](https://pypi.org/project/validity-screen/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Implements the Stage A screening sequence from:
 
 > Cacioli, J. P. (2026). *Screen Before You Interpret: A Portable Validity Protocol for Benchmark-Based LLM Confidence Signals.* arXiv.
+
+## Install
+
+```bash
+pip install validity-screen
+```
+
+Or use directly from this repo:
+
+```python
+from validity_screen import screen
+```
 
 ## What it does
 
@@ -12,7 +27,7 @@ Before computing calibration metrics (ECE), metacognitive sensitivity (meta-d', 
 
 The protocol computes five values from a 2×2 contingency table (correct/incorrect × high/low confidence) and classifies the signal as **Valid**, **Indeterminate**, or **Invalid**.
 
-## Quick start
+## Quick start (Python)
 
 ```python
 import numpy as np
@@ -26,6 +41,19 @@ result = screen(correct, confidence, model_name="My Model", benchmark_name="MMLU
 
 print(result.tier)          # 'Valid', 'Indeterminate', or 'Invalid'
 print(result.vrs_table())   # Complete VRS Table for reporting
+```
+
+## Quick start (command line)
+
+```bash
+# From a CSV with 'correct' and 'confidence' columns
+validity-screen run --data my_data.csv --model-name "GPT-5.4"
+
+# Continuous confidence? Binarised at threshold or median
+validity-screen run --data my_data.csv --confidence-col prob --threshold 0.5
+
+# JSON output for pipelines
+validity-screen run --data my_data.csv --json
 ```
 
 ## What the tiers mean
@@ -90,8 +118,8 @@ print(result.vrs_table())
 ## Requirements
 
 - Python ≥ 3.8
-- NumPy
-- SciPy
+- NumPy ≥ 1.20
+- SciPy ≥ 1.7
 
 ## Citation
 
@@ -105,11 +133,15 @@ print(result.vrs_table())
 }
 ```
 
-## Companion paper
+## Companion papers
 
 The validity indices are derived and psychometrically validated in:
 
 > Cacioli, J. P. (2026). *Before You Interpret the Profile: Validity Scaling for LLM Metacognitive Self-Report.* arXiv.
+
+Concurrent criterion validation against selective prediction:
+
+> Cacioli, J. P. (2026). *Concurrent Criterion Validation of a Validity Screen for LLM Confidence Signals via Selective Prediction.* arXiv.
 
 ## License
 

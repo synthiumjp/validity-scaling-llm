@@ -1,0 +1,2 @@
+"model","tier","n_items","accuracy","auroc","conf_mean","conf_sd","conf_median","L","L_ci_lower","L_ci_upper","Fp","Fp_ci_lower","Fp_ci_upper","RBS","RBS_ci_lower","RBS_ci_upper","r","r_ci_lower","r_ci_upper"
+"google/gemma-3-27b","Valid","500","0.782","0.5876","95.0","5.8","95.0","0.8532","0.7748","0.9076","0.0537","0.0354","0.0807","-0.0931","-0.1632","-0.023","0.1468","0.0599","0.2315"

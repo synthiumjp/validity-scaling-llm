@@ -1,0 +1,2 @@
+"model","tier","n_items","accuracy","auroc","conf_mean","conf_sd","conf_median","L","L_ci_lower","L_ci_upper","Fp","Fp_ci_lower","Fp_ci_upper","RBS","RBS_ci_lower","RBS_ci_upper","r","r_ci_lower","r_ci_upper"
+"google/gemini-3.1-pro-preview","Valid","386","0.9301","0.7858","97.3","8.1","100.0","0.2963","0.1585","0.4848","0.2089","0.1701","0.2539","-0.4948","-0.6721","-0.3175","0.294","0.2001","0.3826"

@@ -1,0 +1,2 @@
+"model","tier","n_items","accuracy","auroc","conf_mean","conf_sd","conf_median","L","L_ci_lower","L_ci_upper","Fp","Fp_ci_lower","Fp_ci_upper","RBS","RBS_ci_lower","RBS_ci_upper","r","r_ci_lower","r_ci_upper"
+"openai/gpt-5.4-2026-03-05","Valid","500","0.888","0.715","95.7","8.8","99.0","0.2679","0.1696","0.3959","0.4324","0.3871","0.4789","-0.2997","-0.4245","-0.1749","0.1895","0.1035","0.2726"

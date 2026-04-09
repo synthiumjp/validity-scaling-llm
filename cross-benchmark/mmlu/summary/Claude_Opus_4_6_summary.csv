@@ -1,0 +1,2 @@
+"model","tier","n_items","accuracy","auroc","conf_mean","conf_sd","conf_median","L","L_ci_lower","L_ci_upper","Fp","Fp_ci_lower","Fp_ci_upper","RBS","RBS_ci_lower","RBS_ci_upper","r","r_ci_lower","r_ci_upper"
+"anthropic/claude-opus-4-6@default","Valid","500","0.93","0.8356","90.2","11.1","95.0","0.1429","0.0626","0.2938","0.4323","0.388","0.4777","-0.4249","-0.5493","-0.3005","0.2174","0.1323","0.2994"

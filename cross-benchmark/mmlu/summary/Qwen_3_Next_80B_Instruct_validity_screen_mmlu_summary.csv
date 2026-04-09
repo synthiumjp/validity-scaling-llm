@@ -1,0 +1,2 @@
+"model","tier","n_items","accuracy","auroc","conf_mean","conf_sd","conf_median","L","L_ci_lower","L_ci_upper","Fp","Fp_ci_lower","Fp_ci_upper","RBS","RBS_ci_lower","RBS_ci_upper","r","r_ci_lower","r_ci_upper"
+"qwen/qwen3-next-80b-a3b-instruct","Valid","500","0.856","0.613","97.3","3.7","100.0","0.375","0.2722","0.4905","0.4252","0.3793","0.4725","-0.1998","-0.321","-0.0785","0.1409","0.0538","0.2258"

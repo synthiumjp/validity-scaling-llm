@@ -31,6 +31,7 @@ Key findings:
 - Minimal screening protocol requires only a 2x2 contingency table
 - Subsampling analysis shows stable classification at 100-150 items for clear cases
 - Unscreened invalid models produce AUROC at chance and zero selective prediction gain
+- Cross-benchmark validation on MMLU (18 models) and Yang et al. (2024) data (11 models, 10 benchmarks) confirms the screen transfers
 
 ### Paper 3: Concurrent Criterion Validation via Selective Prediction (Cacioli, 2026f)
 
@@ -43,7 +44,15 @@ Key findings:
 - The three-tier classification accounts for 47% of the variance in AUROC (η² = .470)
 - DeepSeek-R1 drops from 85.3% accuracy at full coverage to 11.3% at 10% coverage
 
-## Repository Structure
+## Cross-benchmark validation
+
+Two independent cross-benchmark validations confirm the screen transfers beyond the derivation battery. See [`cross-benchmark/`](cross-benchmark/) for full details.
+
+**Yang et al. (2024):** 11 models across 10 benchmarks with verbalized confidence. One model (Qwen 1.5-7B-chat) classified Invalid (L = .990, AUROC = .503). All 10 others Valid. ρ = .894 between L and AUROC.
+
+**MMLU (18 models):** 500 stratified items with verbalized confidence (0-100). All 11 battery-Valid models remained Valid. All 3 battery-Invalid models shifted to Valid under the continuous probe format. Gemma 1B remained Invalid on both formats. The binary probe is the harder test.
+
+## Repository structure
 
 ```
 validity-scaling-llm/
@@ -64,17 +73,16 @@ validity-scaling-llm/
 │   ├── robustness.py                      # Leave-one-out, bootstrap, threshold sweep (Paper 1)
 │   ├── selective_prediction_analysis.py   # Selective prediction pipeline (Paper 3)
 │   └── figures/                           # Figure generation scripts
-├── papers/
-│   ├── validity_scaling/
-│   │   ├── validity_scaling_draft.md      # Paper 1 manuscript
-│   │   └── figures/
-│   ├── screen_protocol/
-│   │   ├── screen_before_you_interpret.md # Paper 2 manuscript
-│   │   └── figures/
-│   └── selective_prediction/
-│       ├── selective_prediction_draft.md   # Paper 3 manuscript
-│       └── figures/
-├── results/                               # Precomputed results tables
+├── figures/                               # Publication figures
+├── cross-benchmark/                       # Cross-benchmark validation data
+│   ├── README.md
+│   ├── yang2024/                          # Yang et al. (2024) external validation
+│   │   ├── README.md
+│   │   └── yang2024_analysis.py
+│   └── mmlu/                              # MMLU validation (18 models)
+│       ├── README.md
+│       ├── summary/                       # 18 screening summary CSVs
+│       └── item_level/                    # 16 item-level results CSVs
 └── LICENSE
 ```
 
@@ -90,10 +98,16 @@ Source: Cacioli, J. P. (2026c). Classical Minds, Modern Machines: A cross-domain
 
 ## Quick start
 
+### Install the screening tool
+
+```bash
+pip install validity-screen
+```
+
 ### Run the validity screen on your own data
 
 ```python
-from screen.validity_screen import screen
+from validity_screen import screen
 import numpy as np
 
 correct = np.array([True, True, False, True, False, ...])
@@ -118,6 +132,7 @@ pandas
 numpy
 scipy
 scikit-learn
+validity-screen
 ```
 
 ## The 20 models

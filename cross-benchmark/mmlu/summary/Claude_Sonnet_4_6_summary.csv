@@ -1,0 +1,2 @@
+model,tier,n_items,accuracy,auroc,conf_mean,conf_sd,conf_median,L,L_ci_lower,L_ci_upper,Fp,Fp_ci_lower,Fp_ci_upper,RBS,RBS_ci_lower,RBS_ci_upper,r,r_ci_lower,r_ci_upper
+anthropic/claude-sonnet-4-6,Valid,498,0.9036,0.8369,86.9,15.0,95.0,0.125,0.0586,0.247,0.4511,0.4057,0.4973,-0.4239,-0.5281,-0.3196,0.2502,0.166,0.3308

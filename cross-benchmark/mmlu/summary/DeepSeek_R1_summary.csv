@@ -1,0 +1,2 @@
+model,tier,n_items,accuracy,auroc,conf_mean,conf_sd,conf_median,L,L_ci_lower,L_ci_upper,Fp,Fp_ci_lower,Fp_ci_upper,RBS,RBS_ci_lower,RBS_ci_upper,r,r_ci_lower,r_ci_upper
+deepseek-ai/deepseek-r1,Valid,387,0.9328,0.768,92.7,6.6,95.0,0.3077,0.165,0.4999,0.3075,0.2621,0.3569,-0.3848,-0.5685,-0.2011,0.2044,0.1069,0.298

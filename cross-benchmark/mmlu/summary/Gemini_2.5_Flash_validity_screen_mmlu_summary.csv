@@ -1,0 +1,2 @@
+"model","tier","n_items","accuracy","auroc","conf_mean","conf_sd","conf_median","L","L_ci_lower","L_ci_upper","Fp","Fp_ci_lower","Fp_ci_upper","RBS","RBS_ci_lower","RBS_ci_upper","r","r_ci_lower","r_ci_upper"
+"google/gemini-2.5-flash","Valid","500","0.914","0.7242","97.3","8.9","100.0","0.3488","0.2242","0.4983","0.2538","0.2161","0.2957","-0.3973","-0.5453","-0.2494","0.246","0.1618","0.3266"

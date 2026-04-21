@@ -2,7 +2,8 @@
 
 **Author:** Jon-Paul Cacioli
 **Programme:** Classical Minds, Modern Machines
-**Status:** Three manuscripts complete. arXiv submission pending (post April 16, 2026).
+**Battery repo:** [synthiumjp/metacognitive-monitoring-battery](https://github.com/synthiumjp/metacognitive-monitoring-battery)
+**Status:** Four papers published on arXiv.
 
 ## Overview
 
@@ -12,7 +13,7 @@ We operationalise six validity indices mapped from the PAI (Morey, 1991, 2007) a
 
 ## The three papers
 
-### Paper 1: Before You Interpret the Profile (Cacioli, 2026d)
+### Paper 1: Before You Interpret the Profile (Cacioli, 2026d) — [arXiv:2604.17707](https://arxiv.org/abs/2604.17707)
 
 Derivation study. Six validity indices (L, K, F, Fp, RBS, TRIN). Psychometric properties, factor structure, chain-of-thought training effects, the WITHDRAW+BET contradiction.
 
@@ -23,7 +24,7 @@ Key findings:
 - The WITHDRAW+BET contradiction rate is 37% in DeepSeek-R1, 0% in all other models
 - Two latent dimensions (under-reporting, over-reporting) account for 94.6% of index variance
 
-### Paper 2: Screen Before You Interpret (Cacioli, 2026e)
+### Paper 2: Screen Before You Interpret (Cacioli, 2026e) — [arXiv:2604.17714](https://arxiv.org/abs/2604.17714)
 
 Portable protocol. Three core indices (L, Fp, RBS), one structural indicator (TRIN), one diagnostic statistic (r(confidence, correct)). Three-tier classification (Invalid, Indeterminate, Valid). VRS Table reporting standard.
 
@@ -33,7 +34,7 @@ Key findings:
 - Unscreened invalid models produce AUROC at chance and zero selective prediction gain
 - Cross-benchmark validation on MMLU (18 models) and Yang et al. (2024) data (11 models, 10 benchmarks) confirms the screen transfers
 
-### Paper 3: Concurrent Criterion Validation via Selective Prediction (Cacioli, 2026f)
+### Paper 3: Concurrent Criterion Validation via Selective Prediction (Cacioli, 2026f) — [arXiv:2604.17716](https://arxiv.org/abs/2604.17716)
 
 Predictive validation. Tests whether the tier classifications from the screen predict selective prediction performance.
 
@@ -94,7 +95,7 @@ validity-scaling-llm/
 - `bet_nobet`: BET or NO BET probe response
 - Track-specific metadata (item type, domain, difficulty, etc.)
 
-Source: Cacioli, J. P. (2026c). Classical Minds, Modern Machines: A cross-domain metacognitive monitoring benchmark for LLMs. [NeurIPS E&D submission].
+Source: Cacioli, J. P. (2026c). [The Metacognitive Monitoring Battery: A Cross-Domain Benchmark for LLM Self-Monitoring](https://arxiv.org/abs/2604.15702). arXiv:2604.15702.
 
 ## Quick start
 
@@ -163,33 +164,37 @@ validity-screen
 ## Citation
 
 ```bibtex
-@misc{cacioli2026validity,
+@article{cacioli2026validity,
   title={Before You Interpret the Profile: Validity Scaling for LLM Metacognitive Self-Report},
   author={Cacioli, Jon-Paul},
   year={2026},
-  note={arXiv preprint (forthcoming)}
+  journal={arXiv preprint arXiv:2604.17707}
 }
 
-@misc{cacioli2026screen,
+@article{cacioli2026screen,
   title={Screen Before You Interpret: A Portable Validity Protocol for Benchmark-Based LLM Confidence Signals},
   author={Cacioli, Jon-Paul},
   year={2026},
-  note={arXiv preprint (forthcoming)}
+  journal={arXiv preprint arXiv:2604.17714}
 }
 
-@misc{cacioli2026selective,
+@article{cacioli2026selective,
   title={Concurrent Criterion Validation of a Validity Screen for LLM Confidence Signals via Selective Prediction},
   author={Cacioli, Jon-Paul},
   year={2026},
-  note={arXiv preprint (forthcoming)}
+  journal={arXiv preprint arXiv:2604.17716}
 }
 ```
+
+## Dataset
+
+The full battery data is also available on HuggingFace: [synthiumjp/metacognitive-monitoring-battery](https://huggingface.co/datasets/synthiumjp/metacognitive-monitoring-battery)
 
 ## Related papers
 
 - Cacioli (2026a). [LLMs as signal detectors](https://arxiv.org/abs/2603.14893). arXiv:2603.14893
 - Cacioli (2026b). [Do LLMs know what they know?](https://arxiv.org/abs/2603.25112) arXiv:2603.25112
-- Cacioli (2026c). Classical Minds metacognitive battery. [NeurIPS E&D submission]
+- Cacioli (2026c). [The Metacognitive Monitoring Battery](https://arxiv.org/abs/2604.15702). arXiv:2604.15702
 - Cacioli (2026). [Overhypothesis formation in LLMs](https://arxiv.org/abs/2603.13696). arXiv:2603.13696
 - Cacioli (2026). [Weber's Law in transformer magnitude representations](https://arxiv.org/abs/2603.20642). arXiv:2603.20642
 - Cacioli (2026). [Categorical perception in LLM hidden states](https://arxiv.org/abs/2603.28258). arXiv:2603.28258

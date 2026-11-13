@@ -1,0 +1,100 @@
+{
+ "trin_warn_models": [
+  "GLM-5",
+  "Gemini 2.5 Flash",
+  "Gemini 2.5 Pro",
+  "Gemini 3 Flash",
+  "Gemini 3.1 Pro",
+  "Gemma 3 27B",
+  "Opus 4.6",
+  "Qwen 80B Think"
+ ],
+ "trin_warn_valid": 5,
+ "trin_warn_valid_r_range": [
+  0.1374,
+  0.3215
+ ],
+ "n_valid_sig": 15,
+ "valid_not_sig": [],
+ "errors_range": [
+  6,
+  138
+ ],
+ "models_lt35": [
+  "DeepSeek-R1",
+  "GLM-5",
+  "GPT-5.4",
+  "Gemini 2.5 Flash",
+  "Gemini 2.5 Pro",
+  "Gemini 3 Flash",
+  "Gemini 3.1 Pro",
+  "Opus 4.6",
+  "Qwen 80B Think",
+  "Sonnet 4.6"
+ ],
+ "acc_range": [
+  0.6947,
+  0.9867
+ ],
+ "L_range_valid": [
+  0.4043,
+  0.9
+ ],
+ "Fp_max_nonR1": 0.3781,
+ "Fp_max_nonR1_model": "GPT-5.4 nano",
+ "rbs_all_negative_except": [],
+ "selacc": {
+  "Sonnet 4.6": {
+   "selacc_100": 0.9292,
+   "selacc_50": 0.9688,
+   "selacc_30": 0.9688,
+   "selacc_10": 0.9688
+  },
+  "DeepSeek-R1": {
+   "selacc_100": 0.9867,
+   "selacc_50": 0.9773,
+   "selacc_30": 0.9759,
+   "selacc_10": 0.986
+  },
+  "Gemini 3.1 Pro": {
+   "selacc_100": 0.9469,
+   "selacc_50": 0.9504,
+   "selacc_30": 0.9504,
+   "selacc_10": 0.9504
+  },
+  "Qwen 80B Think": {
+   "selacc_100": 0.9403,
+   "selacc_50": 0.9416,
+   "selacc_30": 0.9416,
+   "selacc_10": 0.9416
+  },
+  "Claude Haiku 4.5": {
+   "selacc_100": 0.896,
+   "selacc_50": 0.9428,
+   "selacc_30": 0.9428,
+   "selacc_10": 0.9428
+  }
+ },
+ "auroc_ord": {
+  "Claude Haiku 4.5": 0.695,
+  "DeepSeek V3.2": 0.667,
+  "DeepSeek-R1": 0.319,
+  "GLM-5": 0.64,
+  "GPT-5.4": 0.674,
+  "GPT-5.4 mini": 0.652,
+  "GPT-5.4 nano": 0.535,
+  "Gemini 2.5 Flash": 0.555,
+  "Gemini 2.5 Pro": 0.582,
+  "Gemini 3 Flash": 0.548,
+  "Gemini 3.1 Pro": 0.531,
+  "Gemma 3 12B": 0.619,
+  "Gemma 3 1B": 0.547,
+  "Gemma 3 27B": 0.649,
+  "Opus 4.6": 0.639,
+  "Qwen 235B": 0.673,
+  "Qwen 80B Inst": 0.608,
+  "Qwen 80B Think": 0.512,
+  "Qwen Coder 480B": 0.691,
+  "Sonnet 4.6": 0.762
+ }
+}

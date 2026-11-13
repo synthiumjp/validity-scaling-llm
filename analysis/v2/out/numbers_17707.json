@@ -1,0 +1,303 @@
+{
+ "R1_contingency_corrected": {
+  "WD+NOBET": 257,
+  "WD+BET": 171,
+  "KEEP+NOBET": 18,
+  "KEEP+BET": 6
+ },
+ "Haiku_contingency_corrected": {
+  "WD+NOBET": 106,
+  "KEEP+NOBET": 49,
+  "KEEP+BET": 297
+ },
+ "R1_contingency_all_rows": {
+  "WD+NOBET": 257,
+  "WD+BET": 171,
+  "KEEP+NOBET": 18,
+  "KEEP+BET": 6
+ },
+ "Haiku_contingency_all_rows": {
+  "WD+NOBET": 106,
+  "KEEP+NOBET": 49,
+  "KEEP+BET": 297
+ },
+ "tier1_17707_rules": {
+  "DeepSeek-R1": [
+   "F>=.50",
+   "Fp>=.50"
+  ],
+  "Gemini 3.1 Pro": [
+   "L>=.95"
+  ],
+  "Qwen 80B Think": [
+   "L>=.95"
+  ]
+ },
+ "tier2_17707_rules": {
+  "GPT-5.4 nano": [
+   "F z=2.78",
+   "Fp z=2.29"
+  ],
+  "Gemma 3 1B": [
+   "F z=1.93",
+   "Fp z=1.61"
+  ],
+  "Gemma 3 12B": [
+   "Fp z=1.52"
+  ],
+  "Gemini 2.5 Flash": [
+   "K z=1.74"
+  ]
+ },
+ "K_by_model": {
+  "Claude Haiku 4.5": 0.362,
+  "DeepSeek V3.2": 0.275,
+  "DeepSeek-R1": 0.833,
+  "GLM-5": 0.75,
+  "GPT-5.4": 0.5,
+  "GPT-5.4 mini": 0.449,
+  "GPT-5.4 nano": 0.172,
+  "Gemini 2.5 Flash": 1.0,
+  "Gemini 2.5 Pro": 0.833,
+  "Gemini 3 Flash": 0.864,
+  "Gemini 3.1 Pro": 0.875,
+  "Gemma 3 12B": 0.138,
+  "Gemma 3 1B": 0.848,
+  "Gemma 3 27B": 0.5,
+  "Opus 4.6": 0.679,
+  "Qwen 235B": 0.524,
+  "Qwen 80B Inst": 0.733,
+  "Qwen 80B Think": 0.963,
+  "Qwen Coder 480B": 0.375,
+  "Sonnet 4.6": 0.375
+ },
+ "F_by_model": {
+  "Claude Haiku 4.5": 0.074,
+  "DeepSeek V3.2": 0.034,
+  "DeepSeek-R1": 0.943,
+  "GLM-5": 0.0,
+  "GPT-5.4": 0.03,
+  "GPT-5.4 mini": 0.054,
+  "GPT-5.4 nano": 0.297,
+  "Gemini 2.5 Flash": 0.0,
+  "Gemini 2.5 Pro": 0.0,
+  "Gemini 3 Flash": 0.007,
+  "Gemini 3.1 Pro": 0.003,
+  "Gemma 3 12B": 0.152,
+  "Gemma 3 1B": 0.223,
+  "Gemma 3 27B": 0.003,
+  "Opus 4.6": 0.003,
+  "Qwen 235B": 0.024,
+  "Qwen 80B Inst": 0.007,
+  "Qwen 80B Think": 0.003,
+  "Qwen Coder 480B": 0.03,
+  "Sonnet 4.6": 0.003
+ },
+ "r_tier1_vs_rest": {
+  "n_rest": 17,
+  "mean_rest": 0.2005,
+  "sd_rest": 0.0822,
+  "n_t1": 3,
+  "mean_t1": 0.0352,
+  "sd_t1": 0.0374,
+  "d": 2.1051,
+  "welch_p": 0.0012,
+  "n_sig_rest": 15
+ },
+ "r_tier1_loo_welch_p": {
+  "DeepSeek-R1": 0.0812,
+  "Gemini 3.1 Pro": 0.0217,
+  "Qwen 80B Think": 0.0
+ },
+ "incremental_withdraw_delta": {
+  "n": 19,
+  "r2_acc": 0.0,
+  "r2_acc_L": 0.83,
+  "dR2": 0.8299,
+  "F": 78.0936,
+  "p": 0.0
+ },
+ "incremental_r": {
+  "n": 19,
+  "r2_acc": 0.0764,
+  "r2_acc_L": 0.2607,
+  "dR2": 0.1842,
+  "F": 3.9872,
+  "p": 0.0632
+ },
+ "retro_prosp": {
+  "('L', 'prosp')": {
+   "Claude Haiku 4.5": null,
+   "DeepSeek V3.2": null,
+   "DeepSeek-R1": null,
+   "GLM-5": null,
+   "GPT-5.4": null,
+   "GPT-5.4 mini": null,
+   "GPT-5.4 nano": null,
+   "Gemini 2.5 Flash": null,
+   "Gemini 2.5 Pro": null,
+   "Gemini 3 Flash": null,
+   "Gemini 3.1 Pro": null,
+   "Gemma 3 12B": null,
+   "Gemma 3 1B": null,
+   "Gemma 3 27B": null,
+   "Opus 4.6": null,
+   "Qwen 235B": null,
+   "Qwen 80B Inst": null,
+   "Qwen 80B Think": null,
+   "Qwen Coder 480B": null,
+   "Sonnet 4.6": null
+  },
+  "('L', 'retro')": {
+   "Claude Haiku 4.5": 0.404,
+   "DeepSeek V3.2": 0.824,
+   "DeepSeek-R1": 0.0,
+   "GLM-5": 0.8,
+   "GPT-5.4": 0.607,
+   "GPT-5.4 mini": 0.694,
+   "GPT-5.4 nano": 0.517,
+   "Gemini 2.5 Flash": 0.864,
+   "Gemini 2.5 Pro": 0.9,
+   "Gemini 3 Flash": 0.909,
+   "Gemini 3.1 Pro": 0.958,
+   "Gemma 3 12B": 0.446,
+   "Gemma 3 1B": 0.594,
+   "Gemma 3 27B": 0.893,
+   "Opus 4.6": 0.857,
+   "Qwen 235B": 0.667,
+   "Qwen 80B Inst": 0.733,
+   "Qwen 80B Think": 0.963,
+   "Qwen Coder 480B": 0.575,
+   "Sonnet 4.6": 0.719
+  },
+  "('errors', 'prosp')": {
+   "Claude Haiku 4.5": 0.0,
+   "DeepSeek V3.2": 0.0,
+   "DeepSeek-R1": 0.0,
+   "GLM-5": 0.0,
+   "GPT-5.4": 0.0,
+   "GPT-5.4 mini": 0.0,
+   "GPT-5.4 nano": 0.0,
+   "Gemini 2.5 Flash": 0.0,
+   "Gemini 2.5 Pro": 0.0,
+   "Gemini 3 Flash": 0.0,
+   "Gemini 3.1 Pro": 0.0,
+   "Gemma 3 12B": 0.0,
+   "Gemma 3 1B": 0.0,
+   "Gemma 3 27B": 0.0,
+   "Opus 4.6": 0.0,
+   "Qwen 235B": 0.0,
+   "Qwen 80B Inst": 0.0,
+   "Qwen 80B Think": 0.0,
+   "Qwen Coder 480B": 0.0,
+   "Sonnet 4.6": 0.0
+  },
+  "('errors', 'retro')": {
+   "Claude Haiku 4.5": 47.0,
+   "DeepSeek V3.2": 51.0,
+   "DeepSeek-R1": 6.0,
+   "GLM-5": 20.0,
+   "GPT-5.4": 28.0,
+   "GPT-5.4 mini": 49.0,
+   "GPT-5.4 nano": 87.0,
+   "Gemini 2.5 Flash": 22.0,
+   "Gemini 2.5 Pro": 30.0,
+   "Gemini 3 Flash": 22.0,
+   "Gemini 3.1 Pro": 24.0,
+   "Gemma 3 12B": 65.0,
+   "Gemma 3 1B": 138.0,
+   "Gemma 3 27B": 56.0,
+   "Opus 4.6": 28.0,
+   "Qwen 235B": 42.0,
+   "Qwen 80B Inst": 45.0,
+   "Qwen 80B Think": 27.0,
+   "Qwen Coder 480B": 40.0,
+   "Sonnet 4.6": 32.0
+  }
+ },
+ "prosp_L1_models_corrected": [],
+ "prosp_errors_total_corrected": 0,
+ "prosp_all_rows": {},
+ "family_gemini_L": {
+  "mean": 0.9078,
+  "std": 0.039,
+  "min": 0.8636,
+  "max": 0.9583
+ },
+ "family_gemini_K": {
+  "min": 0.8333,
+  "max": 1.0
+ },
+ "openai": {
+  "accuracy": {
+   "GPT-5.4 nano": 0.808,
+   "GPT-5.4 mini": 0.892,
+   "GPT-5.4": 0.938
+  },
+  "L": {
+   "GPT-5.4 nano": 0.517,
+   "GPT-5.4 mini": 0.694,
+   "GPT-5.4": 0.607
+  },
+  "withdraw_delta": {
+   "GPT-5.4 nano": 0.105,
+   "GPT-5.4 mini": 0.172,
+   "GPT-5.4": 0.268
+  }
+ },
+ "anthropic": {
+  "accuracy": {
+   "Opus 4.6": 0.938,
+   "Sonnet 4.6": 0.929,
+   "Claude Haiku 4.5": 0.896
+  },
+  "L": {
+   "Opus 4.6": 0.857,
+   "Sonnet 4.6": 0.719,
+   "Claude Haiku 4.5": 0.404
+  },
+  "withdraw_delta": {
+   "Opus 4.6": 0.117,
+   "Sonnet 4.6": 0.248,
+   "Claude Haiku 4.5": 0.403
+  }
+ },
+ "pairs": {
+  "Fp": {
+   "DeepSeek V3.2": 0.067,
+   "DeepSeek-R1": 0.946,
+   "Qwen 80B Inst": 0.052,
+   "Qwen 80B Think": 0.007
+  },
+  "K": {
+   "DeepSeek V3.2": 0.275,
+   "DeepSeek-R1": 0.833,
+   "Qwen 80B Inst": 0.733,
+   "Qwen 80B Think": 0.963
+  },
+  "L": {
+   "DeepSeek V3.2": 0.824,
+   "DeepSeek-R1": null,
+   "Qwen 80B Inst": 0.733,
+   "Qwen 80B Think": 0.963
+  },
+  "withdraw_delta": {
+   "DeepSeek V3.2": 0.109,
+   "DeepSeek-R1": 0.054,
+   "Qwen 80B Inst": 0.215,
+   "Qwen 80B Think": 0.03
+  },
+  "wd_bet_rate_correct": {
+   "DeepSeek V3.2": 0.0,
+   "DeepSeek-R1": 0.372,
+   "Qwen 80B Inst": 0.0,
+   "Qwen 80B Think": 0.007
+  },
+  "r": {
+   "DeepSeek V3.2": 0.128,
+   "DeepSeek-R1": 0.027,
+   "Qwen 80B Inst": 0.248,
+   "Qwen 80B Think": 0.076
+  }
+ }
+}

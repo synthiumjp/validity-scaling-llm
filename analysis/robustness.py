@@ -1,3 +1,6 @@
+# SUPERSEDED (November 2026): version 1 analysis for arXiv:2604.17707/17714v1/17716.
+# It scores declined responses as errors, uses the substring-graded prospective track,
+# and hard-codes some tiers. Do not use for new work; see analysis/v2/ and arXiv:2604.17714v2.
 """
 Robustness analyses for validity scaling paper.
 - Bootstrap CI on Cohen's d for item-sensitivity comparison

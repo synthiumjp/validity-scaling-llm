@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "validity-screen"
+version = "0.3.0"
+description = "Validity screen for LLM confidence signals (Cacioli, arXiv:2604.17714v2)"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Jon-Paul Cacioli"}
+]
+keywords = [
+    "llm", "confidence", "validity", "metacognition",
+    "calibration", "selective-prediction", "screening",
+    "psychometrics", "evaluation"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.7",
+]
+
+[project.urls]
+Homepage = "https://github.com/synthiumjp/validity-scaling-llm"
+Documentation = "https://github.com/synthiumjp/validity-scaling-llm/tree/master/screen"
+Repository = "https://github.com/synthiumjp/validity-scaling-llm"
+Issues = "https://github.com/synthiumjp/validity-scaling-llm/issues"
+
+[project.scripts]
+validity-screen = "validity_screen.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["validity_screen*"]

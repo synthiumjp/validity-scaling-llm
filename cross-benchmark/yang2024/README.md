@@ -1,49 +1,22 @@
-# Cross-Benchmark Validation: Yang et al. (2024)
+# Yang, Tsai and Yamada (2024)
 
-## Source
+**Source:** Daniel Yang, Yao-Hung Hubert Tsai, Makoto Yamada. *On Verbalized Confidence Scores for LLMs.* arXiv:2412.14737. (The earlier version of this README cited arXiv:2404.09272, which is a different paper.)
 
-Yang, S., et al. (2024). *Can LLMs give confident correct answers? A study on calibrating verbalized confidence.* arXiv:2404.09272.
+## Withdrawn
 
-## What this is
+The earlier `yang2024_analysis.py` contained a hard-coded results table (GPT-4, LLaMA-2, Vicuna, Mistral, Qwen-14B, …; ρ(L, AUROC) = +.894). Those models are not in Yang et al.'s released data, and the numbers were not computed from it. The script has been removed, and the results reported from it in arXiv:2604.17714v1 are withdrawn.
 
-We applied the validity screen (Cacioli, 2026e) to publicly available data from Yang et al. (2024). Their dataset includes 11 LLMs evaluated on 10 benchmarks with verbalized confidence (0-100).
+## Corrected analysis
 
-This is an external validation on an independent dataset, independent models, and an independent probe format.
+`analysis/v2/yang_rescore.py` reads Yang et al.'s released item-level predictions: `predictions/y_pred/<benchmark>/<model>/<method>.npy` (confidence, 0–1) and `y_true/...` (correctness). The data cover 11 models (Gemma 1.1 2B and 7B, GPT-3.5-turbo, GPT-4o, GPT-4o-mini, Llama 3 8B and 70B, Qwen1.5 7B, 32B, 72B and 110B), 10 benchmarks (ARC-Challenge, ARC-Easy, CommonsenseQA, LogiQA, MMLU, SciQ, Social IQa, TriviaQA, TruthfulQA MC1 and MC2) and 17 prompting methods. The data are not redistributed here; obtain them from the original authors.
 
-## Key result
+- Primary analysis: their `basic_1s` prompt, 110 model × benchmark cells, 112,909 responses.
+- Correctness for TriviaQA and TruthfulQA MC2 is fractional partial credit; we count ≥ 0.5 as correct (counting any credit leaves the verdicts at cut point 0.9 unchanged).
 
-| Model | Tier | Mean L | Mean AUROC |
-|-------|------|--------|------------|
-| GPT-4 | Valid | .412 | .691 |
-| GPT-3.5-turbo | Valid | .523 | .638 |
-| LLaMA-2-70B-chat | Valid | .487 | .645 |
-| LLaMA-2-13B-chat | Valid | .551 | .617 |
-| LLaMA-2-7B-chat | Valid | .612 | .589 |
-| Mistral-7B-Instruct | Valid | .534 | .621 |
-| Vicuna-33B | Valid | .498 | .634 |
-| Vicuna-13B | Valid | .567 | .612 |
-| Vicuna-7B | Valid | .623 | .583 |
-| Qwen-14B-chat | Valid | .489 | .647 |
-| **Qwen-1.5-7B-chat** | **Invalid** | **.990** | **.503** |
+Results (validity-screen 0.3.0):
 
-Spearman rho(L, AUROC) = .894, p < .000001.
-
-## Interpretation
-
-Qwen 1.5-7B-chat shows blanket confidence (L = .990) and chance-level discrimination (AUROC = .503), the same pathology observed in the battery for Gemini 3.1 Pro and Qwen 80B Think. All 10 other models show genuine item-level discrimination.
-
-The screen transfers across benchmarks, probe formats, model families, and independent research groups.
-
-## Reproduction
-
-```bash
-pip install validity-screen
-python yang2024_analysis.py
-```
-
-## Citation
-
-If you use this analysis, please cite both:
-
-- Yang, S., et al. (2024). arXiv:2404.09272 (source data)
-- Cacioli, J. P. (2026e). Screen Before You Interpret. arXiv (screening protocol)
+- At cut point 0.5: 2 Valid, 14 Indeterminate, 94 Invalid. At 0.9: 56 Valid, 19 Indeterminate, 35 Invalid.
+- Qwen1.5-7B-chat is Invalid on all 10 benchmarks at 0.5 and 0.9: its confidence barely varies (mean within-cell SD .011), and AUROC averages .501.
+- Gemma 1.1 7B is Invalid on all 10 benchmarks at 0.9 (L between .97 and 1.00, certified in every cell).
+- Across the 17 prompting methods, the share of cells Invalid at 0.9 ranges from 19% to 60%: verdicts depend on the prompt as well as the model.
+- Mean raw-confidence AUROC across cells: .607 (.43 to .89).

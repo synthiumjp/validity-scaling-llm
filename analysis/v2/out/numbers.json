@@ -1,0 +1,277 @@
+{
+ "dropped_tracks": [
+  "prospective"
+ ],
+ "n_models": 20,
+ "n_rows": 9040,
+ "n_nonanswer": 0,
+ "nonanswer_by_model": {},
+ "nonanswer_decline": 0,
+ "nonanswer_decline_conf": {},
+ "F_consensus_items": 296,
+ "tiers": {
+  "Valid": 15,
+  "Indeterminate": 4,
+  "Invalid": 1
+ },
+ "tier_members": {
+  "Valid": [
+   "Claude Haiku 4.5",
+   "DeepSeek V3.2",
+   "GLM-5",
+   "GPT-5.4",
+   "GPT-5.4 mini",
+   "Gemini 2.5 Flash",
+   "Gemini 2.5 Pro",
+   "Gemma 3 12B",
+   "Gemma 3 1B",
+   "Gemma 3 27B",
+   "Opus 4.6",
+   "Qwen 235B",
+   "Qwen 80B Inst",
+   "Qwen Coder 480B",
+   "Sonnet 4.6"
+  ],
+  "Invalid": [
+   "DeepSeek-R1"
+  ],
+  "Indeterminate": [
+   "GPT-5.4 nano",
+   "Gemini 3 Flash",
+   "Gemini 3.1 Pro",
+   "Qwen 80B Think"
+  ]
+ },
+ "trin_warning_n": 8,
+ "rbs_positive_n": 0,
+ "rbs_max": -0.0019,
+ "models_lt_35_errors": 10,
+ "errors_needed_L1.00": 35,
+ "errors_needed_L0.97": 71,
+ "errors_needed_L0.96": 97,
+ "errors_needed_L0.95": 139,
+ "r_valid_vs_nonvalid": {
+  "n_a": 15,
+  "n_b": 5,
+  "mean_a": 0.2164,
+  "sd_a": 0.0737,
+  "mean_b": 0.0536,
+  "sd_b": 0.0366,
+  "d": 2.4214,
+  "hedges_g": 2.3191,
+  "welch_t": 6.4841,
+  "welch_p": 0.0,
+  "mw_U": 75.0,
+  "mw_p_two_sided": 0.0001,
+  "perm_p": 0.0002
+ },
+ "auroc_valid_vs_nonvalid": {
+  "n_a": 15,
+  "n_b": 5,
+  "mean_a": 0.6436,
+  "sd_a": 0.0562,
+  "mean_b": 0.4889,
+  "sd_b": 0.096,
+  "d": 2.3042,
+  "hedges_g": 2.2069,
+  "welch_t": 3.4115,
+  "welch_p": 0.0193,
+  "mw_U": 74.0,
+  "mw_p_two_sided": 0.0003,
+  "perm_p": 0.0001
+ },
+ "r_published3_corrected_data": {
+  "n_a": 17,
+  "n_b": 3,
+  "mean_a": 0.2005,
+  "sd_a": 0.0822,
+  "mean_b": 0.0352,
+  "sd_b": 0.0374,
+  "d": 2.1051,
+  "hedges_g": 2.0162,
+  "welch_t": 5.6223,
+  "welch_p": 0.0012,
+  "mw_U": 51.0,
+  "mw_p_two_sided": 0.0018,
+  "perm_p": 0.0009
+ },
+ "auroc_published3_corrected_data": {
+  "n_a": 17,
+  "n_b": 3,
+  "mean_a": 0.6316,
+  "sd_a": 0.0626,
+  "mean_b": 0.4538,
+  "sd_b": 0.1173,
+  "d": 2.5123,
+  "hedges_g": 2.4061,
+  "welch_t": 2.5608,
+  "welch_p": 0.1131,
+  "mw_U": 51.0,
+  "mw_p_two_sided": 0.0018,
+  "perm_p": 0.0009
+ },
+ "tier_means_auroc": {
+  "Indeterminate": {
+   "mean": 0.5315,
+   "std": 0.0151,
+   "count": 4
+  },
+  "Invalid": {
+   "mean": 0.3188,
+   "std": null,
+   "count": 1
+  },
+  "Valid": {
+   "mean": 0.6436,
+   "std": 0.0562,
+   "count": 15
+  }
+ },
+ "tier_means_r": {
+  "Indeterminate": {
+   "mean": 0.0602,
+   "std": 0.0388,
+   "count": 4
+  },
+  "Invalid": {
+   "mean": 0.0275,
+   "std": null,
+   "count": 1
+  },
+  "Valid": {
+   "mean": 0.2164,
+   "std": 0.0737,
+   "count": 15
+  }
+ },
+ "corr_rbs_auroc_ordinal": -0.7291,
+ "corr_r_auroc_ordinal": 0.5933,
+ "mean_abs_diff_binary_vs_ordinal_auroc": 0.0439,
+ "baseline_r_ns": [
+  "DeepSeek-R1",
+  "GPT-5.4 nano",
+  "Gemini 3 Flash",
+  "Gemini 3.1 Pro",
+  "Qwen 80B Think"
+ ],
+ "R1": {
+  "n_scored": 452.0,
+  "n_abstained": 0.0,
+  "accuracy": 0.9867,
+  "n_incorrect": 6.0,
+  "Fp": 0.9462,
+  "Fp_lo": 0.9212,
+  "L": null,
+  "rbs": null,
+  "r": 0.0275,
+  "auroc_binary": null,
+  "auroc_ordinal": 0.3188,
+  "trin": 0.9469,
+  "selacc_100": 0.9867,
+  "selacc_50": 0.9773,
+  "selacc_30": 0.9759,
+  "selacc_10": 0.986,
+  "wd_bet_rate_all": 0.3783,
+  "wd_bet_rate_correct": 0.3722,
+  "keep_rate": 0.0531
+ },
+ "V32": {
+  "withdraw_on_correct": 0.0673,
+  "L": 0.8235,
+  "r": 0.1275
+ },
+ "QwenInst": {
+  "L": 0.7333,
+  "L_lo": 0.5896,
+  "r": 0.2475,
+  "Fp": 0.0516,
+  "K": 0.7333
+ },
+ "QwenThink": {
+  "L": 0.963,
+  "L_lo": 0.8172,
+  "r": 0.0759,
+  "Fp": 0.0071,
+  "K": 0.963,
+  "n_incorrect": 27.0
+ },
+ "Gem31Pro": {
+  "L": 0.9583,
+  "L_lo": 0.7976,
+  "r": 0.0022,
+  "Fp": 0.0397,
+  "n_incorrect": 24.0
+ },
+ "wd_bet_correct_top": {
+  "DeepSeek-R1": 0.3722,
+  "Gemma 3 1B": 0.1688,
+  "GPT-5.4 nano": 0.0329,
+  "Qwen 235B": 0.0122
+ },
+ "sonnet_selacc": {
+  "selacc_100": 0.9292,
+  "selacc_30": 0.9688,
+  "selacc_10": 0.9688
+ },
+ "cells_zero_errors": 6,
+ "cells_lt5_errors": 30,
+ "alpha_L_complete_case": {
+  "n": 17,
+  "alpha": 0.635
+ },
+ "alpha_K_complete_case": {
+  "n": 17,
+  "alpha": 0.8762
+ },
+ "track_r_vs_auroc": {
+  "n": 77,
+  "rho": 0.7379
+ },
+ "corr_L_K": {
+  "n": 19,
+  "r": 0.703
+ },
+ "corr_F_Fp": {
+  "n": 20,
+  "r": 0.9794
+ },
+ "corr_L_F": {
+  "n": 19,
+  "r": -0.6488
+ },
+ "corr_L_accuracy": {
+  "n": 19,
+  "r": 0.5126
+ },
+ "corr_withdraw_delta_bet_delta": {
+  "n": 20,
+  "r": 0.5512
+ },
+ "within_valid_L_auroc": {
+  "n": 15,
+  "rho": -0.4036,
+  "p": 0.1358
+ },
+ "splithalf_tier_agreement": {
+  "Claude Haiku 4.5": 1.0,
+  "DeepSeek V3.2": 0.49,
+  "DeepSeek-R1": 1.0,
+  "GLM-5": 0.575,
+  "GPT-5.4": 0.776,
+  "GPT-5.4 mini": 0.657,
+  "GPT-5.4 nano": 0.841,
+  "Gemini 2.5 Flash": 0.704,
+  "Gemini 2.5 Pro": 0.86,
+  "Gemini 3 Flash": 0.536,
+  "Gemini 3.1 Pro": 0.85,
+  "Gemma 3 12B": 0.921,
+  "Gemma 3 1B": 0.271,
+  "Gemma 3 27B": 0.532,
+  "Opus 4.6": 0.611,
+  "Qwen 235B": 0.927,
+  "Qwen 80B Inst": 0.943,
+  "Qwen 80B Think": 0.666,
+  "Qwen Coder 480B": 0.871,
+  "Sonnet 4.6": 0.954
+ }
+}

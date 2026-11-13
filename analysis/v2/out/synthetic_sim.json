@@ -1,0 +1,204 @@
+{
+ "40": [
+  {
+   "name": "Always KEEP",
+   "p_keep_correct": 1.0,
+   "p_keep_incorrect": 1.0,
+   "Valid": 0.0,
+   "Indeterminate": 0.0,
+   "Invalid": 1.0,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Always WITHDRAW",
+   "p_keep_correct": 0.0,
+   "p_keep_incorrect": 0.0,
+   "Valid": 0.0,
+   "Indeterminate": 0.0,
+   "Invalid": 1.0,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Random, 50% KEEP",
+   "p_keep_correct": 0.5,
+   "p_keep_incorrect": 0.5,
+   "Valid": 0.021,
+   "Indeterminate": 0.4645,
+   "Invalid": 0.5145,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Random, 80% KEEP",
+   "p_keep_correct": 0.8,
+   "p_keep_incorrect": 0.8,
+   "Valid": 0.031,
+   "Indeterminate": 0.946,
+   "Invalid": 0.023,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Random, 95% KEEP",
+   "p_keep_correct": 0.95,
+   "p_keep_incorrect": 0.95,
+   "Valid": 0.04,
+   "Indeterminate": 0.844,
+   "Invalid": 0.116,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Near-blanket confidence (97/97)",
+   "p_keep_correct": 0.97,
+   "p_keep_incorrect": 0.97,
+   "Valid": 0.0435,
+   "Indeterminate": 0.6565,
+   "Invalid": 0.3,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Perfect monitor",
+   "p_keep_correct": 1.0,
+   "p_keep_incorrect": 0.0,
+   "Valid": 1.0,
+   "Indeterminate": 0.0,
+   "Invalid": 0.0,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Noisy monitor (80/40)",
+   "p_keep_correct": 0.8,
+   "p_keep_incorrect": 0.4,
+   "Valid": 0.999,
+   "Indeterminate": 0.001,
+   "Invalid": 0.0,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Weak monitor (90/75)",
+   "p_keep_correct": 0.9,
+   "p_keep_incorrect": 0.75,
+   "Valid": 0.7665,
+   "Indeterminate": 0.2335,
+   "Invalid": 0.0,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Weakly inverted (85/95)",
+   "p_keep_correct": 0.85,
+   "p_keep_incorrect": 0.95,
+   "Valid": 0.0,
+   "Indeterminate": 0.604,
+   "Invalid": 0.396,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Inverted (20/80)",
+   "p_keep_correct": 0.2,
+   "p_keep_incorrect": 0.8,
+   "Valid": 0.0,
+   "Indeterminate": 0.0,
+   "Invalid": 1.0,
+   "Uncertifiable": 0.0
+  }
+ ],
+ "150": [
+  {
+   "name": "Always KEEP",
+   "p_keep_correct": 1.0,
+   "p_keep_incorrect": 1.0,
+   "Valid": 0.0,
+   "Indeterminate": 0.0,
+   "Invalid": 1.0,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Always WITHDRAW",
+   "p_keep_correct": 0.0,
+   "p_keep_incorrect": 0.0,
+   "Valid": 0.0,
+   "Indeterminate": 0.0,
+   "Invalid": 1.0,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Random, 50% KEEP",
+   "p_keep_correct": 0.5,
+   "p_keep_incorrect": 0.5,
+   "Valid": 0.0295,
+   "Indeterminate": 0.4475,
+   "Invalid": 0.523,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Random, 80% KEEP",
+   "p_keep_correct": 0.8,
+   "p_keep_incorrect": 0.8,
+   "Valid": 0.0245,
+   "Indeterminate": 0.948,
+   "Invalid": 0.0275,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Random, 95% KEEP",
+   "p_keep_correct": 0.95,
+   "p_keep_incorrect": 0.95,
+   "Valid": 0.0325,
+   "Indeterminate": 0.4555,
+   "Invalid": 0.512,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Near-blanket confidence (97/97)",
+   "p_keep_correct": 0.97,
+   "p_keep_incorrect": 0.97,
+   "Valid": 0.0265,
+   "Indeterminate": 0.063,
+   "Invalid": 0.9105,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Perfect monitor",
+   "p_keep_correct": 1.0,
+   "p_keep_incorrect": 0.0,
+   "Valid": 1.0,
+   "Indeterminate": 0.0,
+   "Invalid": 0.0,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Noisy monitor (80/40)",
+   "p_keep_correct": 0.8,
+   "p_keep_incorrect": 0.4,
+   "Valid": 1.0,
+   "Indeterminate": 0.0,
+   "Invalid": 0.0,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Weak monitor (90/75)",
+   "p_keep_correct": 0.9,
+   "p_keep_incorrect": 0.75,
+   "Valid": 0.9875,
+   "Indeterminate": 0.0125,
+   "Invalid": 0.0,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Weakly inverted (85/95)",
+   "p_keep_correct": 0.85,
+   "p_keep_incorrect": 0.95,
+   "Valid": 0.0,
+   "Indeterminate": 0.0775,
+   "Invalid": 0.9225,
+   "Uncertifiable": 0.0
+  },
+  {
+   "name": "Inverted (20/80)",
+   "p_keep_correct": 0.2,
+   "p_keep_incorrect": 0.8,
+   "Valid": 0.0,
+   "Indeterminate": 0.0,
+   "Invalid": 1.0,
+   "Uncertifiable": 0.0
+  }
+ ]
+}

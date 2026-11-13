@@ -1,0 +1,53 @@
+== basic_1s: cells 110 | models 11 | benches 10 | cells with fractional labels 22
+c50 {'Invalid': 94, 'Indeterminate': 14, 'Valid': 2}
+c70 {'Invalid': 90, 'Indeterminate': 14, 'Valid': 6}
+c80 {'Invalid': 74, 'Valid': 23, 'Indeterminate': 13}
+c90 {'Valid': 56, 'Invalid': 35, 'Indeterminate': 19}
+c95 {'Invalid': 52, 'Valid': 45, 'Indeterminate': 13}
+c100 {'Invalid': 92, 'Valid': 15, 'Indeterminate': 3}
+c90_tier             Indeterminate  Invalid  Valid
+model                                             
+gemma1.1-2b-it                   7        2      1
+gemma1.1-7b-it                   0       10      0
+gpt3.5-turbo                     0        7      3
+gpt4o                            3        0      7
+gpt4o-mini                       0        2      8
+llama3-70b-instruct              0        0     10
+llama3-8b-instruct               4        0      6
+qwen1.5-110b-chat                0        0     10
+qwen1.5-32b-chat                 3        3      4
+qwen1.5-72b-chat                 2        1      7
+qwen1.5-7b-chat                  0       10      0
+mean continuous AUROC: 0.607 range 0.429 0.889
+                       acc  auroc  auroc_max  conf_sd  n_distinct_max  inval90  inval50
+model                                                                                  
+gemma1.1-2b-it       0.396  0.508      0.545    0.073              53        2       10
+gemma1.1-7b-it       0.595  0.520      0.610    0.028              10       10       10
+gpt3.5-turbo         0.709  0.601      0.747    0.046              12        7       10
+gpt4o                0.851  0.741      0.889    0.038              14        0        7
+gpt4o-mini           0.777  0.713      0.866    0.056              12        2        7
+llama3-70b-instruct  0.813  0.662      0.762    0.074               9        0        8
+llama3-8b-instruct   0.689  0.571      0.652    0.068               8        0       10
+qwen1.5-110b-chat    0.803  0.661      0.801    0.085              11        0        7
+qwen1.5-32b-chat     0.767  0.572      0.684    0.043               9        3        8
+qwen1.5-72b-chat     0.783  0.622      0.723    0.063              11        1        7
+qwen1.5-7b-chat      0.652  0.501      0.508    0.011               6       10       10
+                         cells  auroc  inval50  inval90
+method                                                 
+advanced_1s                109  0.618    0.817    0.284
+advanced_1s_probscore      110  0.620    0.691    0.345
+basic_1s                   110  0.607    0.855    0.318
+basic_1s_1shot             110  0.609    0.800    0.300
+basic_1s_5shot             109  0.615    0.807    0.330
+basic_1s_probscore         110  0.606    0.691    0.273
+basic_1s_scorefloat        110  0.597    0.836    0.273
+basic_1s_scoreletter       109  0.542    0.761    0.422
+basic_1s_scoretext         110  0.574    0.800    0.382
+combo_1s_v2                106  0.660    0.368    0.443
+tian2023just_1s_top1       110  0.649    0.527    0.400
+tian2023just_1s_top1_v1    110  0.605    0.645    0.191
+tian2023just_1s_top1_v2    110  0.633    0.836    0.291
+tian2023just_1s_top1_v3    110  0.629    0.845    0.264
+tian2023just_1s_top4       110  0.669    0.182    0.600
+xiong2023can_cot           110  0.612    0.818    0.236
+xiong2023can_vanilla       110  0.596    0.864    0.291

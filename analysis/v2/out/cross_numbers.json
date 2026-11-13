@@ -1,0 +1,641 @@
+{
+ "atlas_n_models": 33,
+ "atlas_partial_runs": 12,
+ "atlas_partial_sizes": [
+  598,
+  981,
+  1346,
+  1356,
+  1361,
+  1368,
+  1371,
+  1380,
+  1445,
+  1447,
+  1499,
+  1499
+ ],
+ "atlas_scored_total": 46161,
+ "atlas_excluded_total": 990,
+ "atlas_answer_X_total": 13,
+ "atlas_tiers_c50": {
+  "Invalid": 24,
+  "Valid": 9
+ },
+ "atlas_tiers_c50_v02": {
+  "Invalid": 24,
+  "Valid": 9
+ },
+ "atlas_tiers_c70": {
+  "Invalid": 19,
+  "Valid": 13,
+  "Indeterminate": 1
+ },
+ "atlas_tiers_c70_v02": {
+  "Invalid": 19,
+  "Valid": 13,
+  "Indeterminate": 1
+ },
+ "atlas_tiers_c80": {
+  "Valid": 18,
+  "Invalid": 13,
+  "Indeterminate": 2
+ },
+ "atlas_tiers_c80_v02": {
+  "Valid": 18,
+  "Invalid": 13,
+  "Indeterminate": 2
+ },
+ "atlas_tiers_c90": {
+  "Valid": 28,
+  "Invalid": 4,
+  "Indeterminate": 1
+ },
+ "atlas_tiers_c90_v02": {
+  "Valid": 28,
+  "Invalid": 4,
+  "Indeterminate": 1
+ },
+ "atlas_tiers_c95": {
+  "Valid": 29,
+  "Invalid": 3,
+  "Indeterminate": 1
+ },
+ "atlas_tiers_c95_v02": {
+  "Valid": 30,
+  "Invalid": 3
+ },
+ "atlas_tiers_c100": {
+  "Invalid": 22,
+  "Valid": 10,
+  "Indeterminate": 1
+ },
+ "atlas_tiers_c100_v02": {
+  "Invalid": 22,
+  "Valid": 10,
+  "Indeterminate": 1
+ },
+ "atlas_tiers_gt50": {
+  "Invalid": 23,
+  "Valid": 9,
+  "Indeterminate": 1
+ },
+ "atlas_share_ge90_median": 0.91,
+ "atlas_auroc_range": [
+  0.4977,
+  0.8062
+ ],
+ "atlas_auroc_mean": 0.6972,
+ "atlas_auroc_ci_incl_05": [
+  "google/gemma-3-12b",
+  "google/gemma-3-1b"
+ ],
+ "atlas_best_cut_valid": {
+  "50": 9,
+  "70": 13,
+  "80": 18,
+  "90": 28,
+  "95": 29,
+  "100": 10
+ },
+ "atlas_valid_at_some_cut": 31,
+ "atlas_never_valid": [
+  [
+   "google/gemma-3-4b",
+   0.528,
+   0.502,
+   0.553
+  ],
+  [
+   "google/gemma-3-1b",
+   0.498,
+   0.487,
+   0.508
+  ]
+ ],
+ "mmlu500_n_models": 20,
+ "mmlu500_partial_runs": 7,
+ "mmlu500_partial_sizes": [
+  114,
+  154,
+  186,
+  364,
+  372,
+  386,
+  498
+ ],
+ "mmlu500_scored_total": 8568,
+ "mmlu500_excluded_total": 6,
+ "mmlu500_answer_X_total": 6,
+ "mmlu500_tiers_c50": {
+  "Invalid": 9,
+  "Indeterminate": 7,
+  "Valid": 4
+ },
+ "mmlu500_tiers_c50_v02": {
+  "Invalid": 9,
+  "Indeterminate": 7,
+  "Valid": 4
+ },
+ "mmlu500_tiers_c70": {
+  "Valid": 7,
+  "Indeterminate": 7,
+  "Invalid": 6
+ },
+ "mmlu500_tiers_c70_v02": {
+  "Valid": 7,
+  "Indeterminate": 7,
+  "Invalid": 6
+ },
+ "mmlu500_tiers_c80": {
+  "Valid": 11,
+  "Invalid": 5,
+  "Indeterminate": 4
+ },
+ "mmlu500_tiers_c80_v02": {
+  "Valid": 12,
+  "Invalid": 5,
+  "Indeterminate": 3
+ },
+ "mmlu500_tiers_c90": {
+  "Valid": 14,
+  "Indeterminate": 3,
+  "Invalid": 3
+ },
+ "mmlu500_tiers_c90_v02": {
+  "Valid": 17,
+  "Invalid": 3
+ },
+ "mmlu500_tiers_c95": {
+  "Valid": 15,
+  "Invalid": 4,
+  "Indeterminate": 1
+ },
+ "mmlu500_tiers_c95_v02": {
+  "Valid": 16,
+  "Invalid": 4
+ },
+ "mmlu500_tiers_c100": {
+  "Invalid": 14,
+  "Valid": 5,
+  "Indeterminate": 1
+ },
+ "mmlu500_tiers_c100_v02": {
+  "Invalid": 14,
+  "Valid": 6
+ },
+ "mmlu500_tiers_gt50": {
+  "Invalid": 8,
+  "Indeterminate": 7,
+  "Valid": 5
+ },
+ "mmlu500_share_ge90_median": 0.93,
+ "mmlu500_auroc_range": [
+  0.4997,
+  0.8369
+ ],
+ "mmlu500_auroc_mean": 0.6838,
+ "mmlu500_auroc_ci_incl_05": [
+  "deepseek-ai/deepseek-v3.2",
+  "openai/gpt-5.4-nano-2026-03-17",
+  "google/gemma-3-12b",
+  "google/gemma-3-1b",
+  "qwen/qwen3-coder-480b-a35b-instruct"
+ ],
+ "mmlu500_best_cut_valid": {
+  "50": 4,
+  "70": 7,
+  "80": 11,
+  "90": 14,
+  "95": 15,
+  "100": 5
+ },
+ "mmlu500_valid_at_some_cut": 17,
+ "mmlu500_never_valid": [
+  [
+   "deepseek-ai/deepseek-v3.2",
+   0.663,
+   0.493,
+   0.83
+  ],
+  [
+   "google/gemma-3-1b",
+   0.5,
+   0.483,
+   0.516
+  ],
+  [
+   "qwen/qwen3-coder-480b-a35b-instruct",
+   0.549,
+   0.432,
+   0.662
+  ]
+ ],
+ "retest_n": 20,
+ "retest_r_auroc": 0.8794,
+ "retest_agree_c50": 0.65,
+ "retest_agree_c70": 0.65,
+ "retest_agree_c80": 0.75,
+ "retest_agree_c90": 0.8,
+ "retest_agree_c95": 0.9,
+ "retest_agree_c100": 0.9,
+ "battery_vs_mmlu": [
+  {
+   "model": "Claude Haiku 4.5",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.29,
+   "atlas_auroc": 0.767,
+   "atlas_lo": 0.722,
+   "atlas_hi": 0.809,
+   "atlas_c50": "Valid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.746,
+   "mmlu500_c50": "Valid",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "Opus 4.6",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.157,
+   "atlas_auroc": 0.806,
+   "atlas_lo": 0.744,
+   "atlas_hi": 0.864,
+   "atlas_c50": "Valid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.836,
+   "mmlu500_c50": "Valid",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "Sonnet 4.6",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.289,
+   "atlas_auroc": 0.777,
+   "atlas_lo": 0.724,
+   "atlas_hi": 0.829,
+   "atlas_c50": "Valid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.837,
+   "mmlu500_c50": "Valid",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "DeepSeek V3.2",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.128,
+   "atlas_auroc": 0.734,
+   "atlas_lo": 0.693,
+   "atlas_hi": 0.774,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.663,
+   "mmlu500_c50": "Indeterminate",
+   "mmlu500_c90": "Indeterminate"
+  },
+  {
+   "model": "DeepSeek-R1",
+   "battery_tier": "Invalid",
+   "battery_tier_v02": "Invalid",
+   "battery_r": 0.027,
+   "atlas_auroc": 0.769,
+   "atlas_lo": 0.72,
+   "atlas_hi": 0.816,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.806,
+   "mmlu500_c50": "Invalid",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "GLM-5",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.322,
+   "atlas_auroc": 0.697,
+   "atlas_lo": 0.605,
+   "atlas_hi": 0.787,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.679,
+   "mmlu500_c50": "Indeterminate",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "GPT-5.4",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.185,
+   "atlas_auroc": 0.649,
+   "atlas_lo": 0.595,
+   "atlas_hi": 0.697,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.715,
+   "mmlu500_c50": "Indeterminate",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "GPT-5.4 mini",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.149,
+   "atlas_auroc": 0.651,
+   "atlas_lo": 0.612,
+   "atlas_hi": 0.69,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.699,
+   "mmlu500_c50": "Invalid",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "GPT-5.4 nano",
+   "battery_tier": "Indeterminate",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.084,
+   "atlas_auroc": 0.582,
+   "atlas_lo": 0.551,
+   "atlas_hi": 0.613,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.554,
+   "mmlu500_c50": "Invalid",
+   "mmlu500_c90": "Indeterminate"
+  },
+  {
+   "model": "Gemini 2.5 Flash",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.308,
+   "atlas_auroc": 0.73,
+   "atlas_lo": 0.683,
+   "atlas_hi": 0.777,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.724,
+   "mmlu500_c50": "Indeterminate",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "Gemini 2.5 Pro",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.307,
+   "atlas_auroc": 0.712,
+   "atlas_lo": 0.648,
+   "atlas_hi": 0.776,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Indeterminate",
+   "mmlu500_auroc": 0.796,
+   "mmlu500_c50": "Indeterminate",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "Gemini 3 Flash",
+   "battery_tier": "Indeterminate",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.078,
+   "atlas_auroc": 0.731,
+   "atlas_lo": 0.672,
+   "atlas_hi": 0.788,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.695,
+   "mmlu500_c50": "Indeterminate",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "Gemini 3.1 Pro",
+   "battery_tier": "Indeterminate",
+   "battery_tier_v02": "Indeterminate",
+   "battery_r": 0.002,
+   "atlas_auroc": 0.765,
+   "atlas_lo": 0.701,
+   "atlas_hi": 0.827,
+   "atlas_c50": "Valid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.786,
+   "mmlu500_c50": "Valid",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "Gemma 3 12B",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.198,
+   "atlas_auroc": 0.505,
+   "atlas_lo": 0.473,
+   "atlas_hi": 0.534,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Invalid",
+   "mmlu500_auroc": 0.533,
+   "mmlu500_c50": "Invalid",
+   "mmlu500_c90": "Invalid"
+  },
+  {
+   "model": "Gemma 3 1B",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.104,
+   "atlas_auroc": 0.498,
+   "atlas_lo": 0.487,
+   "atlas_hi": 0.508,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Invalid",
+   "mmlu500_auroc": 0.5,
+   "mmlu500_c50": "Invalid",
+   "mmlu500_c90": "Invalid"
+  },
+  {
+   "model": "Gemma 3 27B",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.137,
+   "atlas_auroc": 0.566,
+   "atlas_lo": 0.538,
+   "atlas_hi": 0.594,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Invalid",
+   "mmlu500_auroc": 0.58,
+   "mmlu500_c50": "Invalid",
+   "mmlu500_c90": "Invalid"
+  },
+  {
+   "model": "Qwen 235B",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.227,
+   "atlas_auroc": 0.621,
+   "atlas_lo": 0.583,
+   "atlas_hi": 0.657,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.647,
+   "mmlu500_c50": "Invalid",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "Qwen 80B Inst",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.248,
+   "atlas_auroc": 0.636,
+   "atlas_lo": 0.598,
+   "atlas_hi": 0.672,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.613,
+   "mmlu500_c50": "Invalid",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "Qwen 80B Think",
+   "battery_tier": "Indeterminate",
+   "battery_tier_v02": "Indeterminate",
+   "battery_r": 0.076,
+   "atlas_auroc": 0.745,
+   "atlas_lo": 0.698,
+   "atlas_hi": 0.791,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.717,
+   "mmlu500_c50": "Invalid",
+   "mmlu500_c90": "Valid"
+  },
+  {
+   "model": "Qwen Coder 480B",
+   "battery_tier": "Valid",
+   "battery_tier_v02": "Valid",
+   "battery_r": 0.197,
+   "atlas_auroc": 0.671,
+   "atlas_lo": 0.635,
+   "atlas_hi": 0.708,
+   "atlas_c50": "Invalid",
+   "atlas_c90": "Valid",
+   "mmlu500_auroc": 0.549,
+   "mmlu500_c50": "Indeterminate",
+   "mmlu500_c90": "Indeterminate"
+  }
+ ],
+ "corr_battery_r_atlas_auroc": -0.0692,
+ "corr_battery_r_mmlu500_auroc": 0.0692,
+ "yang_cells": 110,
+ "yang_frac_cells": 22,
+ "yang_items_total": 112909,
+ "yang_tiers_c50": {
+  "Invalid": 94,
+  "Indeterminate": 14,
+  "Valid": 2
+ },
+ "yang_tiers_c50_v02": {
+  "Invalid": 94,
+  "Indeterminate": 14,
+  "Valid": 2
+ },
+ "yang_tiers_c70": {
+  "Invalid": 90,
+  "Indeterminate": 14,
+  "Valid": 6
+ },
+ "yang_tiers_c70_v02": {
+  "Invalid": 90,
+  "Indeterminate": 14,
+  "Valid": 6
+ },
+ "yang_tiers_c80": {
+  "Invalid": 74,
+  "Valid": 23,
+  "Indeterminate": 13
+ },
+ "yang_tiers_c80_v02": {
+  "Invalid": 74,
+  "Valid": 23,
+  "Indeterminate": 13
+ },
+ "yang_tiers_c90": {
+  "Valid": 56,
+  "Invalid": 35,
+  "Indeterminate": 19
+ },
+ "yang_tiers_c90_v02": {
+  "Valid": 62,
+  "Invalid": 35,
+  "Indeterminate": 13
+ },
+ "yang_tiers_c95": {
+  "Invalid": 52,
+  "Valid": 45,
+  "Indeterminate": 13
+ },
+ "yang_tiers_c95_v02": {
+  "Valid": 55,
+  "Invalid": 52,
+  "Indeterminate": 3
+ },
+ "yang_tiers_c100": {
+  "Invalid": 92,
+  "Valid": 15,
+  "Indeterminate": 3
+ },
+ "yang_tiers_c100_v02": {
+  "Invalid": 92,
+  "Valid": 18
+ },
+ "yang_auroc_mean": 0.6066,
+ "yang_auroc_range": [
+  0.4295,
+  0.8887
+ ],
+ "yang_invalid_c90_by_model": {
+  "gemma1.1-7b-it": 10,
+  "qwen1.5-7b-chat": 10,
+  "gpt3.5-turbo": 7,
+  "qwen1.5-32b-chat": 3,
+  "gemma1.1-2b-it": 2,
+  "gpt4o-mini": 2,
+  "qwen1.5-72b-chat": 1
+ },
+ "yang_rho_L90_auroc": -0.3381,
+ "yang_qwen7b": {
+  "auroc_mean": 0.5013,
+  "auroc_max": 0.5083,
+  "conf_sd_mean": 0.0108,
+  "n_distinct_max": 6,
+  "invalid_c90": 10,
+  "invalid_c50": 10
+ },
+ "yang_gemma7b": {
+  "auroc_mean": 0.5202,
+  "invalid_c90": 10,
+  "reasons": [
+   "L = 1.000 (Wilson lower 0.942; certified)",
+   "L = 1.000 (Wilson lower 0.952; certified)",
+   "L = 1.000 (Wilson lower 0.990; certified); RBS = +0.001 [-0.",
+   "L = 0.991 (Wilson lower 0.977; certified); RBS = +0.000 [-0.",
+   "L = 1.000 (Wilson lower 0.994; certified); RBS = +0.001 [-0.",
+   "L = 0.991 (Wilson lower 0.949; certified)",
+   "L = 0.998 (Wilson lower 0.991; certified)",
+   "L = 0.996 (Wilson lower 0.990; certified)",
+   "L = 0.983 (Wilson lower 0.968; certified)",
+   "L = 0.972 (Wilson lower 0.955; certified)"
+  ]
+ },
+ "yang_methods": 17,
+ "yang_methods_inval90_range": [
+  0.1909,
+  0.6
+ ],
+ "yang_methods_inval50_range": [
+  0.1818,
+  0.8636
+ ],
+ "yang_gt0_tiers_c90": {
+  "Valid": 56,
+  "Invalid": 35,
+  "Indeterminate": 19
+ }
+}

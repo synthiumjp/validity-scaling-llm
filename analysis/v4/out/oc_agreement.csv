@@ -1,0 +1,101 @@
+model,N,agree
+Claude Haiku 4.5,226,0.947
+Claude Haiku 4.5,452,1.0
+Claude Haiku 4.5,1000,1.0
+Claude Haiku 4.5,2000,1.0
+Claude Haiku 4.5,5000,1.0
+DeepSeek V3.2,226,0.55
+DeepSeek V3.2,452,0.565
+DeepSeek V3.2,1000,0.872
+DeepSeek V3.2,2000,0.994
+DeepSeek V3.2,5000,1.0
+DeepSeek-R1,226,0.493
+DeepSeek-R1,452,0.493
+DeepSeek-R1,1000,0.452
+DeepSeek-R1,2000,0.666
+DeepSeek-R1,5000,0.683
+GLM-5,226,0.388
+GLM-5,452,0.832
+GLM-5,1000,0.992
+GLM-5,2000,1.0
+GLM-5,5000,1.0
+GPT-5.4,226,0.456
+GPT-5.4,452,0.79
+GPT-5.4,1000,0.996
+GPT-5.4,2000,1.0
+GPT-5.4,5000,1.0
+GPT-5.4 mini,226,0.524
+GPT-5.4 mini,452,0.69
+GPT-5.4 mini,1000,0.957
+GPT-5.4 mini,2000,1.0
+GPT-5.4 mini,5000,1.0
+GPT-5.4 nano,226,0.651
+GPT-5.4 nano,452,0.493
+GPT-5.4 nano,1000,0.625
+GPT-5.4 nano,2000,0.942
+GPT-5.4 nano,5000,1.0
+Gemini 2.5 Flash,226,0.34
+Gemini 2.5 Flash,452,0.728
+Gemini 2.5 Flash,1000,0.947
+Gemini 2.5 Flash,2000,0.995
+Gemini 2.5 Flash,5000,1.0
+Gemini 2.5 Pro,226,0.428
+Gemini 2.5 Pro,452,0.702
+Gemini 2.5 Pro,1000,0.85
+Gemini 2.5 Pro,2000,0.945
+Gemini 2.5 Pro,5000,0.998
+Gemini 3 Flash,226,0.442
+Gemini 3 Flash,452,0.588
+Gemini 3 Flash,1000,0.507
+Gemini 3 Flash,2000,0.629
+Gemini 3 Flash,5000,0.967
+Gemini 3.1 Pro,226,0.613
+Gemini 3.1 Pro,452,0.947
+Gemini 3.1 Pro,1000,0.632
+Gemini 3.1 Pro,2000,0.484
+Gemini 3.1 Pro,5000,0.624
+Gemma 3 12B,226,0.689
+Gemma 3 12B,452,0.957
+Gemma 3 12B,1000,1.0
+Gemma 3 12B,2000,1.0
+Gemma 3 12B,5000,1.0
+Gemma 3 1B,226,0.559
+Gemma 3 1B,452,0.545
+Gemma 3 1B,1000,0.823
+Gemma 3 1B,2000,0.991
+Gemma 3 1B,5000,1.0
+Gemma 3 27B,226,0.532
+Gemma 3 27B,452,0.547
+Gemma 3 27B,1000,0.858
+Gemma 3 27B,2000,0.998
+Gemma 3 27B,5000,1.0
+Opus 4.6,226,0.43
+Opus 4.6,452,0.546
+Opus 4.6,1000,0.865
+Opus 4.6,2000,0.996
+Opus 4.6,5000,1.0
+Qwen 235B,226,0.663
+Qwen 235B,452,0.932
+Qwen 235B,1000,1.0
+Qwen 235B,2000,1.0
+Qwen 235B,5000,1.0
+Qwen 80B Inst,226,0.697
+Qwen 80B Inst,452,0.955
+Qwen 80B Inst,1000,1.0
+Qwen 80B Inst,2000,1.0
+Qwen 80B Inst,5000,1.0
+Qwen 80B Think,226,0.629
+Qwen 80B Think,452,0.659
+Qwen 80B Think,1000,0.325
+Qwen 80B Think,2000,0.567
+Qwen 80B Think,5000,0.788
+Qwen Coder 480B,226,0.598
+Qwen Coder 480B,452,0.932
+Qwen Coder 480B,1000,0.997
+Qwen Coder 480B,2000,1.0
+Qwen Coder 480B,5000,1.0
+Sonnet 4.6,226,0.66
+Sonnet 4.6,452,0.957
+Sonnet 4.6,1000,1.0
+Sonnet 4.6,2000,1.0
+Sonnet 4.6,5000,1.0

@@ -1,15 +1,11 @@
 # validity-screen
 
-**Check whether an LLM's confidence signal tracks correctness, and which response set dominates it, before you build on it.**
+**Check whether an LLM's confidence signal carries information about correctness before you build anything on it.**
 
 [![PyPI](https://img.shields.io/pypi/v/validity-screen)](https://pypi.org/project/validity-screen/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Implements the screen in:
-
-> Cacioli, J. P. (2026). *Screen Before You Interpret: A Portable Validity Screen for Benchmark-Based LLM Confidence Signals.* arXiv:2604.17714v2.
-
-> **Version 0.3.0 corrects version 0.1.** See [CHANGELOG.md](CHANGELOG.md). Results produced with 0.1 should be rerun.
+Abstention, routing and escalation all assume that a model's confidence varies with whether it is right. This package checks that assumption, using the logic psychological assessment applies to response validity: exclude responses the respondent did not give, rule out fixed response sets, and require evidence that responding follows content.
 
 ## Install
 
@@ -20,73 +16,74 @@ pip install validity-screen
 ## Quick start
 
 ```python
-import numpy as np
-from validity_screen import screen, binarise
+from validity_screen import screen
 
-# item-level correctness and a binary confidence judgement (1 = KEEP / high)
-result = screen(correct, keep, model_name="My Model")
-print(result.tier)          # Valid, Indeterminate, Invalid or Uncertifiable
-print(result.vrs_table())   # full reporting table
+# Binary confidence (1 = kept / high, 0 = withdrawn / low)
+r = screen(correct, keep, answered=answered, model_name="Model A")
 
-# verbalized 0-100 confidence: choose the cut point in advance
-result = screen(correct, binarise(confidence, 90), binarisation_threshold=">= 90")
+# Continuous confidence: state the cut point you will deploy at, on the same scale as the data
+r = screen(correct, confidence_0_100, answered=answered, cut=90)
 
-# exclude declines, parse failures and pipeline defaults before scoring
-result = screen(correct, keep, answered=answered)
+print(r.tier, r.reason_code, r.flags)   # e.g. Valid signal_detected []
+print(r.vrs_table())                    # full validity report
 ```
 
-Command line:
+`answered` marks rows to drop before scoring: declines, unparseable output, and values the pipeline supplied rather than the model (such as a parser default). Missing values on scored rows raise an error rather than being guessed; with `cut`, missing confidence values are excluded and counted.
+
+## What it reports
+
+From the correct/wrong × kept/withdrawn table:
+
+| Index | Formula | Meaning |
+|---|---|---|
+| Kept-error rate `L` | b / (b + d) | share of errors on which confidence was kept |
+| Withdrawn-correct rate `Fp` | c / (a + c) | share of correct answers withdrawn |
+| Item sensitivity `J` | (1 − Fp) − L | Youden's J; binary AUROC = (1 + J) / 2 |
+
+## Tiers (version 0.4)
+
+| Tier | Rule |
+|---|---|
+| **Invalid** | blanket confidence (L ≥ .95) or blanket withdrawal (Fp ≥ .95), each certified by a Wilson lower bound > .90; or inversion (J < 0, one-sided mid-p < .025) |
+| **Uncertifiable** | fewer than 10 errors or 10 correct answers, and no certified response set |
+| **Indeterminate** | response set or inversion suspected but not certified, or no detectable sensitivity (`reason_code` says which) |
+| **Valid** | J > 0 (one-sided Fisher mid-p < .025) and no response set |
+
+Flags, reported beside the tier and never changing it: `low_coverage` (Fp ≥ .50), `response_set_not_excluded` (Valid, but the L or Fp 95% interval reaches .95), `fixed_responding` (one response on ≥ 95% of items).
+
+**Valid means better than chance, not good.** Read J and its interval. With many items a very small J is Valid; use `min_j=` (chosen in advance) if you need a minimum effect.
+
+## Operating characteristics
+
+- **False Valid** (no real signal): at most .026 against a nominal .025 in typical cases (226 to 1,500 items, accuracy .70 to .97, keep rates .50 to .99). With only 10 to 12 errors it reaches about .030 at keep rates of .50 or more. At low keep rates (.10 to .30, as at very high cut points) it reaches about .037.
+- **False Invalid**: a model whose true kept-error rate is .93 is certified as blanket confidence up to about 23% of the time, depending on the number of errors. The guard is set at a Wilson lower bound of .90.
+- **Power** depends on the number of errors, not items. Use the planning functions:
+
+```python
+from validity_screen import power_valid, power_invalid, items_needed, errors_needed
+power_valid(n_items=1000, accuracy=0.90, keep_correct=0.95, keep_wrong=0.85)  # P(Valid) for J = .10
+items_needed(accuracy=0.90, true_L=0.97, power=0.90)                          # 1600
+errors_needed(withdrawn=0)                                                     # 35
+```
+
+## Command line
 
 ```bash
 validity-screen run --data results.csv --correct-col is_correct --confidence-col keep
-validity-screen run --data results.csv --confidence-col confidence --threshold 90
-validity-screen run --data results.csv --answered-col parsed --json
-validity-screen plan --accuracy 0.92        # items needed to certify blanket confidence
+validity-screen run --data results.csv --confidence-col confidence --cut 90
+validity-screen plan --accuracy 0.92 --true-L 0.97
 ```
 
-## What it computes
+Cells are read strictly. Blank or unreadable cells, including words in a numeric column, are excluded and counted, never guessed.
 
-From the correctness-by-confidence table (a = correct & high, b = incorrect & high, c = correct & low, d = incorrect & low):
+## Changes
 
-| Index | Definition | Standard equivalent | Flag |
-|---|---|---|---|
-| **L** | b / (b + d): confidence kept on errors | false-positive rate of KEEP | >= .95 |
-| **Fp** | c / (a + c): confidence withdrawn on correct answers | false-negative rate of KEEP | >= .50 |
-| **RBS** | Fp - (1 - L) | minus Youden's J; binary AUROC = (1 - RBS)/2 | > 0 |
-| **TRIN** | max(n_high, n_low) / N | modal-response share | >= .95, warning only |
-| **r** | Pearson on 0/1 vectors | phi | reported |
-
-Each index is computed only when its denominator reaches 10. A flagged index is **Invalid** if its interval clears the guard (Wilson lower bound > .40 for Fp, > .90 for L; Newcombe interval excluding 0 for RBS) and **Indeterminate** otherwise.
-
-## Tiers
-
-| Tier | Meaning |
-|---|---|
-| **Invalid** | A response set is established: blanket confidence, blanket withdrawal, or inversion. Do not interpret AUROC, ECE or selective prediction. |
-| **Indeterminate** | A threshold is crossed but cannot be certified (often too few errors), or no response set is present but confidence does not measurably track correctness. |
-| **Uncertifiable** | RBS cannot be estimated (fewer than 10 correct items or errors). |
-| **Valid** | No response set, and the RBS interval lies below 0: confidence measurably tracks correctness. |
-
-`require_signal=False` (CLI `--v02`) gives the 0.2 rule, under which Valid only meant that no flag fired. Every result also reports `tier_v02`.
-
-## Things to know
-
-- **Errors, not items, set the sample size.** Certifying blanket confidence needs 35 errors at L = 1.00, 71 at .97, 97 at .96 and 139 at .95. Use `errors_needed()` / `items_needed()`.
-- **Continuous confidence needs a cut point chosen in advance.** Verdicts depend on it: verbalized confidence usually piles at 90-100, so at 50 most models look like blanket confidence. Screen at the threshold your deployment will use. Median splits are deprecated because their verdict depends on tie handling.
-- **Valid is necessary, not sufficient.** It says the signal is non-degenerate and better than chance, not that it is good. Report r and AUROC alongside the tier.
-- **Verdicts are specific to probe format, prompt and task.** Screen under the conditions the signal will be used in.
+See [CHANGELOG.md](CHANGELOG.md). Results from 0.1 should be rerun. Version 0.4 changed the decision rules; the decision record, with the rationale for each rule, is in the repository.
 
 ## Citation
 
-```bibtex
-@misc{cacioli2026screen,
-  author = {Cacioli, Jon-Paul},
-  title  = {Screen Before You Interpret: A Portable Validity Screen for Benchmark-Based {LLM} Confidence Signals},
-  year   = {2026},
-  howpublished = {arXiv:2604.17714v2}
-}
-```
+Cacioli, J. P. (2026). *Screen Before You Interpret: A Validity Screen for LLM Confidence Signals and Its Operating Characteristics.* Preprint: arXiv:2604.17714.
 
 ## License
 
-MIT.
+MIT

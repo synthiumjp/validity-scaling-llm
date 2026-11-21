@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.4.1 (November 2026)
+
+Fixes found by an independent review of 0.4.0. Decision rules unchanged.
+
+- Scale mismatch is an error: 0-1 confidence with a 0-100 cut point (or the reverse) used to certify a response set without warning.
+- `cut` must be a finite number; `alpha` must be in (0, 1); inputs must be one-dimensional; `answered` must match in length.
+- `items_needed` returned one item too many through floating-point rounding (351 instead of 350).
+- `response_set_not_excluded` is computed from 95% intervals whatever `alpha` is.
+- Planning functions and `validity-screen plan` validate their arguments.
+- No scored rows gives reason `no_scored_rows`.
+- New `min_j=` option: Valid additionally requires the lower 95% bound of J to exceed a stated minimum.
+- CLI: percent strings are read; words in a numeric column are unreadable (excluded and counted) instead of becoming 0/1; a column with no readable cell is an error; header lines in `--correct/--confidence` files are detected or skipped with `--header`.
+- 56 tests.
+
+## 0.4.0 (November 2026)
+
+Decision rules changed (rationale in the decision record).
+
+- Blanket withdrawal is Invalid at Fp >= .95 (certified), symmetric with blanket confidence; Fp >= .50 is now the `low_coverage` flag. (0.3 called signals with strong discrimination Invalid.)
+- Valid requires J > 0 by a one-sided Fisher mid-p test at .025; the 0.3 Newcombe-interval rule exceeded its nominal false-Valid rate (up to .088).
+- Every Indeterminate verdict has a `reason_code`; Valid verdicts whose L or Fp interval reaches .95 carry `response_set_not_excluded`.
+- `screen(..., cut=)` handles continuous confidence, excluding and counting missing values. `binarise` has no default threshold. Non-binary or missing confidence passed without `cut` raises an error.
+- `errors_needed(withdrawn)` returns integer-attainable counts; new `power_invalid`, `power_valid`, `items_needed(accuracy, true_L, power)`.
+- RBS is reported as J (Youden's J); `.rbs` remains as a deprecated alias.
+
 ## 0.3.0 (November 2026)
 
 Corrects version 0.1.0. Results produced with 0.1.0 should be rerun.

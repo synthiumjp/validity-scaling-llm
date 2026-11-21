@@ -1,0 +1,18 @@
+{
+ "num_confirmatory_cells": 7,
+ "num_tiers": {
+  "Invalid": 6,
+  "Valid": 1
+ },
+ "num_reasons": {
+  "blanket_confidence": 6,
+  "signal_detected": 1
+ },
+ "cat_tiers": {
+  "Indeterminate": 3,
+  "Valid": 2,
+  "Uncertifiable": 1,
+  "Invalid": 1
+ },
+ "cat_confirmatory": 5
+}

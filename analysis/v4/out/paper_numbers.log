@@ -1,0 +1,192 @@
+{
+ "battery6": {
+  "tiers": {
+   "Valid": 15,
+   "Indeterminate": 4,
+   "Invalid": 0,
+   "Uncertifiable": 1
+  },
+  "differs": {
+   "GPT-5.4 nano": [
+    "Indeterminate",
+    "Valid"
+   ],
+   "Gemma 3 1B": [
+    "Valid",
+    "Indeterminate"
+   ]
+  }
+ },
+ "mmlu500_50s_changes": {
+  "google/gemini-2.5-flash@70": [
+   "Valid",
+   "Indeterminate"
+  ],
+  "google/gemini-2.5-flash@80": [
+   "Valid",
+   "Indeterminate"
+  ]
+ }
+}
+{
+ "n_cells_all": 1860,
+ "n_methods": 17,
+ "n_models": 11,
+ "n_benches": 10,
+ "n_scored_all": 1874565,
+ "basic": {
+  "cells": 110,
+  "n_scored": 112909,
+  "by_cut": {
+   "50": {
+    "Valid": 2,
+    "Indeterminate": 14,
+    "Invalid": 94,
+    "Uncertifiable": 0
+   },
+   "70": {
+    "Valid": 5,
+    "Indeterminate": 15,
+    "Invalid": 90,
+    "Uncertifiable": 0
+   },
+   "80": {
+    "Valid": 22,
+    "Indeterminate": 14,
+    "Invalid": 74,
+    "Uncertifiable": 0
+   },
+   "90": {
+    "Valid": 58,
+    "Indeterminate": 21,
+    "Invalid": 31,
+    "Uncertifiable": 0
+   },
+   "95": {
+    "Valid": 65,
+    "Indeterminate": 20,
+    "Invalid": 25,
+    "Uncertifiable": 0
+   },
+   "100": {
+    "Valid": 46,
+    "Indeterminate": 26,
+    "Invalid": 38,
+    "Uncertifiable": 0
+   }
+  },
+  "reasons_by_cut": {
+   "50": {
+    "blanket_confidence": 94,
+    "blanket_confidence_suspected": 14,
+    "signal_detected": 2
+   },
+   "70": {
+    "blanket_confidence": 90,
+    "blanket_confidence_suspected": 13,
+    "signal_detected": 5,
+    "no_detectable_sensitivity": 1,
+    "inversion_suspected": 1
+   },
+   "80": {
+    "blanket_confidence": 73,
+    "signal_detected": 22,
+    "blanket_confidence_suspected": 11,
+    "inversion_suspected": 2,
+    "no_detectable_sensitivity": 1,
+    "inversion": 1
+   },
+   "90": {
+    "signal_detected": 58,
+    "blanket_confidence": 31,
+    "no_detectable_sensitivity": 8,
+    "blanket_confidence_suspected": 7,
+    "inversion_suspected": 6
+   },
+   "95": {
+    "signal_detected": 65,
+    "blanket_confidence": 20,
+    "no_detectable_sensitivity": 16,
+    "inversion_suspected": 4,
+    "blanket_withdrawal": 3,
+    "inversion": 2
+   },
+   "100": {
+    "signal_detected": 46,
+    "blanket_withdrawal": 35,
+    "no_detectable_sensitivity": 16,
+    "inversion_suspected": 10,
+    "inversion": 3
+   }
+  },
+  "auroc_mean": 0.6075,
+  "auroc_range": [
+   0.4295,
+   0.8887
+  ]
+ },
+ "all_by_cut": {
+  "50": {
+   "Valid": 227,
+   "Indeterminate": 298,
+   "Invalid": 1328,
+   "Uncertifiable": 7
+  },
+  "70": {
+   "Valid": 554,
+   "Indeterminate": 290,
+   "Invalid": 1009,
+   "Uncertifiable": 7
+  },
+  "80": {
+   "Valid": 858,
+   "Indeterminate": 318,
+   "Invalid": 677,
+   "Uncertifiable": 7
+  },
+  "90": {
+   "Valid": 1208,
+   "Indeterminate": 334,
+   "Invalid": 311,
+   "Uncertifiable": 7
+  },
+  "95": {
+   "Valid": 963,
+   "Indeterminate": 369,
+   "Invalid": 521,
+   "Uncertifiable": 7
+  },
+  "100": {
+   "Valid": 594,
+   "Indeterminate": 416,
+   "Invalid": 844,
+   "Uncertifiable": 6
+  }
+ },
+ "valid90_by_method": {
+  "min": 0.4455,
+  "max": 0.8182,
+  "argmin": "basic_1s_scoreletter",
+  "argmax": "tian2023just_1s_top1"
+ },
+ "valid90_by_model": {
+  "min": 0.1765,
+  "max": 0.9412,
+  "argmin": "qwen1.5-7b-chat",
+  "argmax": "qwen1.5-110b-chat"
+ },
+ "valid90_by_bench": {
+  "min": 0.3333,
+  "max": 0.8172,
+  "argmin": "logi_qa",
+  "argmax": "trivia_qa"
+ },
+ "invalid90_by_method": {
+  "min": 0.049,
+  "max": 0.4091
+ },
+ "auroc_by_tier90": {
+  "Indeterminate": 0.5401,
+  "Invalid": 0.536,
+
+{"newcombe_max": 0.0884, "midp_max": 0.0303} {"50": {"Valid": 9, "Indeterminate": 0, "Invalid": 24, "Uncertifiable": 0}, "70": {"Valid": 13, "Indeterminate": 1, "Invalid": 19, "Uncertifiable": 0}, "80": {"Valid": 18, "Indeterminate": 2, "Invalid": 13, "Uncertifiable": 0}, "90": {"Valid": 28, "Indeterminate": 1, "Invalid": 4, "Uncertifiable": 0}, "95": {"Valid": 31, "Indeterminate": 1, "Invalid": 1, "Uncertifiable": 0}, "100": {"Valid": 25, "Indeterminate": 2, "Invalid": 6, "Uncertifiable": 0}}

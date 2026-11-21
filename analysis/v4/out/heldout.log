@@ -1,0 +1,32 @@
+model condition  n_trials  parse_rate  n_class_only scoring  confirmatory  n_scored  n_err  accuracy  share_ge95     L  L_lo    Fp      J   J_lo  J_hi  p_signal  auroc_raw          tier              reason                                      flags
+   M2       CAT       524       0.962           492   step1          True        12      3     0.750       0.000   NaN   NaN   NaN    NaN    NaN   NaN       NaN        NaN Uncertifiable      too_few_errors                           fixed_responding
+   M3       CAT       524       0.307            39   step1         False       122     17     0.861       0.041 0.765 0.527 0.000  0.235  0.091 0.473     0.000      0.640         Valid     signal_detected                           fixed_responding
+   M4       CAT       524       0.998           506   step1          True        17      4     0.765       0.000   NaN   NaN 0.154    NaN    NaN   NaN       NaN      0.808 Uncertifiable      too_few_errors                                           
+   M5       CAT       524       0.960           443   step1          True        60     40     0.333       0.050 0.650 0.495 0.100  0.250  0.011 0.421     0.021      0.741         Valid     signal_detected                                           
+   M6       CAT       524       0.994           513   step1          True         8      4     0.500       0.000   NaN   NaN   NaN    NaN    NaN   NaN       NaN      0.844 Uncertifiable      too_few_errors                                           
+   M7       CAT       524       0.998           521   step1          True         2      2     0.000       1.000   NaN   NaN   NaN    NaN    NaN   NaN       NaN        NaN Uncertifiable      too_few_errors                           fixed_responding
+   M8       CAT       524       0.135            26   step1         False        45     27     0.400       0.089 0.852 0.675 0.222 -0.074 -0.321 0.147     0.725      0.632 Indeterminate inversion_suspected                                           
+   M2       NUM       524       0.954             0   step1          True       500    112     0.776       0.872 1.000 0.967 0.000  0.000 -0.010 0.033     0.500      0.657       Invalid  blanket_confidence                           fixed_responding
+   M3       NUM       524       0.899             0   step1          True       471     79     0.832       0.968 0.949 0.877 0.003  0.048  0.015 0.121     0.002      0.683         Valid     signal_detected fixed_responding|response_set_not_excluded
+   M4       NUM       524       0.985             0   step1          True       516    125     0.758       0.965 0.976 0.932 0.008  0.016 -0.005 0.061     0.094      0.575       Invalid  blanket_confidence                           fixed_responding
+   M5       NUM       524       0.996             0   step1          True       522    214     0.590       0.967 0.953 0.916 0.006  0.040  0.013 0.078     0.002      0.527       Invalid  blanket_confidence                           fixed_responding
+   M6       NUM       524       0.987             0   step1          True       517    147     0.716       0.956 0.986 0.952 0.003  0.011 -0.005 0.046     0.109      0.578       Invalid  blanket_confidence                           fixed_responding
+   M7       NUM       524       1.000             0   step1          True       524    128     0.756       0.964 1.000 0.971 0.000  0.000 -0.010 0.029     0.500      0.592       Invalid  blanket_confidence                           fixed_responding
+   M8       NUM       524       0.781             0   step1          True       409    169     0.587       0.724 0.976 0.941 0.000  0.024  0.002 0.059     0.014      0.669       Invalid  blanket_confidence                           fixed_responding
+{
+ "num_confirmatory_cells": 7,
+ "num_tiers": {
+  "Invalid": 6,
+  "Valid": 1
+ },
+ "num_reasons": {
+  "blanket_confidence": 6,
+  "signal_detected": 1
+ },
+ "cat_tiers": {
+  "Uncertifiable": 4,
+  "Valid": 2,
+  "Indeterminate": 1
+ },
+ "cat_confirmatory": 5
+}

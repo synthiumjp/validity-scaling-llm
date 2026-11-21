@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "validity-screen"
-version = "0.3.0"
-description = "Validity screen for LLM confidence signals (Cacioli, arXiv:2604.17714v2)"
+version = "0.4.1"
+description = "Validity screen for LLM confidence signals: response sets, item sensitivity and planning"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.9"
@@ -26,12 +26,16 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = [
     "numpy>=1.20",
     "scipy>=1.7",
 ]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "scikit-learn>=1.0"]
 
 [project.urls]
 Homepage = "https://github.com/synthiumjp/validity-scaling-llm"

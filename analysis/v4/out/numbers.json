@@ -1,0 +1,1237 @@
+{
+ "battery": {
+  "n_models": 20,
+  "n_responses": 9040,
+  "n_scored": 9040,
+  "tiers": {
+   "Valid": 15,
+   "Indeterminate": 4,
+   "Invalid": 0,
+   "Uncertifiable": 1
+  },
+  "members": {
+   "Valid": [
+    "Claude Haiku 4.5",
+    "DeepSeek V3.2",
+    "GLM-5",
+    "GPT-5.4",
+    "GPT-5.4 mini",
+    "Gemini 2.5 Flash",
+    "Gemini 2.5 Pro",
+    "Gemma 3 12B",
+    "Gemma 3 1B",
+    "Gemma 3 27B",
+    "Opus 4.6",
+    "Qwen 235B",
+    "Qwen 80B Inst",
+    "Qwen Coder 480B",
+    "Sonnet 4.6"
+   ],
+   "Uncertifiable": [
+    "DeepSeek-R1"
+   ],
+   "Indeterminate": [
+    "GPT-5.4 nano",
+    "Gemini 3 Flash",
+    "Gemini 3.1 Pro",
+    "Qwen 80B Think"
+   ]
+  },
+  "reasons": {
+   "signal_detected": 15,
+   "no_detectable_sensitivity": 2,
+   "blanket_confidence_suspected": 2,
+   "too_few_errors": 1
+  },
+  "lt35_errors": 10,
+  "valid_J_range": [
+   0.0794,
+   0.4032
+  ],
+  "valid_L_range": [
+   0.4043,
+   0.9
+  ],
+  "flags": {
+   "low_coverage": [
+    "DeepSeek-R1"
+   ],
+   "response_set_not_excluded": [
+    "Gemini 2.5 Flash",
+    "Gemini 2.5 Pro"
+   ],
+   "fixed_responding": [
+    "GLM-5",
+    "Gemini 2.5 Flash",
+    "Gemini 2.5 Pro",
+    "Gemini 3 Flash",
+    "Gemini 3.1 Pro",
+    "Gemma 3 27B",
+    "Opus 4.6",
+    "Qwen 80B Think"
+   ]
+  },
+  "v03_to_v04": {
+   "('Indeterminate', 'Indeterminate')": 4,
+   "('Invalid', 'Uncertifiable')": 1,
+   "('Valid', 'Valid')": 15
+  },
+  "rows": {
+   "Claude Haiku 4.5": {
+    "n_err": 47,
+    "accuracy": 0.896,
+    "L": 0.4043,
+    "L_lo": 0.2764,
+    "L_hi": 0.5466,
+    "Fp": 0.1926,
+    "Fp_lo": 0.1571,
+    "Fp_hi": 0.2338,
+    "J": 0.4032,
+    "J_lo": 0.255,
+    "J_hi": 0.5358,
+    "p_signal": 0.0,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": null,
+    "auroc_raw": 0.6953
+   },
+   "DeepSeek V3.2": {
+    "n_err": 51,
+    "accuracy": 0.8872,
+    "L": 0.8235,
+    "L_lo": 0.6975,
+    "L_hi": 0.9043,
+    "Fp": 0.0673,
+    "Fp_lo": 0.0467,
+    "Fp_hi": 0.0962,
+    "J": 0.1091,
+    "J_lo": 0.0234,
+    "J_hi": 0.2369,
+    "p_signal": 0.008,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": null,
+    "auroc_raw": 0.6668
+   },
+   "DeepSeek-R1": {
+    "n_err": 6,
+    "accuracy": 0.9867,
+    "L": null,
+    "L_lo": null,
+    "L_hi": null,
+    "Fp": 0.9462,
+    "Fp_lo": 0.9212,
+    "Fp_hi": 0.9636,
+    "J": null,
+    "J_lo": null,
+    "J_hi": null,
+    "p_signal": null,
+    "tier": "Uncertifiable",
+    "reason": "too_few_errors",
+    "flags": "low_coverage",
+    "auroc_raw": 0.3188
+   },
+   "GLM-5": {
+    "n_err": 20,
+    "accuracy": 0.9558,
+    "L": 0.8,
+    "L_lo": 0.584,
+    "L_hi": 0.9193,
+    "Fp": 0.0069,
+    "Fp_lo": 0.0024,
+    "Fp_hi": 0.0202,
+    "J": 0.1931,
+    "J_lo": 0.073,
+    "J_hi": 0.4091,
+    "p_signal": 0.0,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": "fixed_responding",
+    "auroc_raw": 0.6398
+   },
+   "GPT-5.4": {
+    "n_err": 28,
+    "accuracy": 0.9381,
+    "L": 0.6071,
+    "L_lo": 0.4241,
+    "L_hi": 0.7643,
+    "Fp": 0.125,
+    "Fp_lo": 0.0968,
+    "Fp_hi": 0.1599,
+    "J": 0.2679,
+    "J_lo": 0.1068,
+    "J_hi": 0.4531,
+    "p_signal": 0.0004,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": null,
+    "auroc_raw": 0.6736
+   },
+   "GPT-5.4 mini": {
+    "n_err": 49,
+    "accuracy": 0.8916,
+    "L": 0.6939,
+    "L_lo": 0.5547,
+    "L_hi": 0.8048,
+    "Fp": 0.134,
+    "Fp_lo": 0.1042,
+    "Fp_hi": 0.1707,
+    "J": 0.1721,
+    "J_lo": 0.0552,
+    "J_hi": 0.3144,
+    "p_signal": 0.002,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": null,
+    "auroc_raw": 0.6523
+   },
+   "GPT-5.4 nano": {
+    "n_err": 87,
+    "accuracy": 0.8075,
+    "L": 0.5172,
+    "L_lo": 0.4138,
+    "L_hi": 0.6193,
+    "Fp": 0.3781,
+    "Fp_lo": 0.3298,
+    "Fp_hi": 0.4289,
+    "J": 0.1047,
+    "J_lo": -0.0093,
+    "J_hi": 0.2189,
+    "p_signal": 0.0383,
+    "tier": "Indeterminate",
+    "reason": "no_detectable_sensitivity",
+    "flags": null,
+    "auroc_raw": 0.535
+   },
+   "Gemini 2.5 Flash": {
+    "n_err": 22,
+    "accuracy": 0.9513,
+    "L": 0.8636,
+    "L_lo": 0.6667,
+    "L_hi": 0.9525,
+    "Fp": 0.0023,
+    "Fp_lo": 0.0004,
+    "Fp_hi": 0.0131,
+    "J": 0.134,
+    "J_lo": 0.0445,
+    "J_hi": 0.331,
+    "p_signal": 0.0002,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": "fixed_responding|response_set_not_excluded",
+    "auroc_raw": 0.5548
+   },
+   "Gemini 2.5 Pro": {
+    "n_err": 30,
+    "accuracy": 0.9336,
+    "L": 0.9,
+    "L_lo": 0.7438,
+    "L_hi": 0.9654,
+    "Fp": 0.0,
+    "Fp_lo": 0.0,
+    "Fp_hi": 0.009,
+    "J": 0.1,
+    "J_lo": 0.034,
+    "J_hi": 0.2562,
+    "p_signal": 0.0001,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": "fixed_responding|response_set_not_excluded",
+    "auroc_raw": 0.5823
+   },
+   "Gemini 3 Flash": {
+    "n_err": 22,
+    "accuracy": 0.9513,
+    "L": 0.9091,
+    "L_lo": 0.7219,
+    "L_hi": 0.9747,
+    "Fp": 0.0279,
+    "Fp_lo": 0.016,
+    "Fp_hi": 0.0481,
+    "J": 0.063,
+    "J_lo": -0.0057,
+    "J_hi": 0.2506,
+    "p_signal": 0.0851,
+    "tier": "Indeterminate",
+    "reason": "no_detectable_sensitivity",
+    "flags": "fixed_responding",
+    "auroc_raw": 0.5483
+   },
+   "Gemini 3.1 Pro": {
+    "n_err": 24,
+    "accuracy": 0.9469,
+    "L": 0.9583,
+    "L_lo": 0.7976,
+    "L_hi": 0.9926,
+    "Fp": 0.0397,
+    "Fp_lo": 0.0249,
+    "Fp_hi": 0.0627,
+    "J": 0.0019,
+    "J_lo": -0.0393,
+    "J_hi": 0.1634,
+    "p_signal": 0.4397,
+    "tier": "Indeterminate",
+    "reason": "blanket_confidence_suspected",
+    "flags": "fixed_responding",
+    "auroc_raw": 0.5309
+   },
+   "Gemma 3 12B": {
+    "n_err": 65,
+    "accuracy": 0.8562,
+    "L": 0.4462,
+    "L_lo": 0.3317,
+    "L_hi": 0.5666,
+    "Fp": 0.2894,
+    "Fp_lo": 0.2465,
+    "Fp_hi": 0.3365,
+    "J": 0.2644,
+    "J_lo": 0.1351,
+    "J_hi": 0.3867,
+    "p_signal": 0.0,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": null,
+    "auroc_raw": 0.6193
+   },
+   "Gemma 3 1B": {
+    "n_err": 138,
+    "accuracy": 0.6947,
+    "L": 0.5942,
+    "L_lo": 0.5108,
+    "L_hi": 0.6725,
+    "Fp": 0.2994,
+    "Fp_lo": 0.2514,
+    "Fp_hi": 0.3522,
+    "J": 0.1064,
+    "J_lo": 0.012,
+    "J_hi": 0.2027,
+    "p_signal": 0.0144,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": null,
+    "auroc_raw": 0.5472
+   },
+   "Gemma 3 27B": {
+    "n_err": 56,
+    "accuracy": 0.8761,
+    "L": 0.8929,
+    "L_lo": 0.7853,
+    "L_hi": 0.95,
+    "Fp": 0.0278,
+    "Fp_lo": 0.0156,
+    "Fp_hi": 0.049,
+    "J": 0.0794,
+    "J_lo": 0.0184,
+    "J_hi": 0.1876,
+    "p_signal": 0.0069,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": "fixed_responding",
+    "auroc_raw": 0.6495
+   },
+   "Opus 4.6": {
+    "n_err": 28,
+    "accuracy": 0.9381,
+    "L": 0.8571,
+    "L_lo": 0.6851,
+    "L_hi": 0.943,
+    "Fp": 0.0259,
+    "Fp_lo": 0.0145,
+    "Fp_hi": 0.0459,
+    "J": 0.1169,
+    "J_lo": 0.0288,
+    "J_hi": 0.2893,
+    "p_signal": 0.0056,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": "fixed_responding",
+    "auroc_raw": 0.6394
+   },
+   "Qwen 235B": {
+    "n_err": 42,
+    "accuracy": 0.9071,
+    "L": 0.6667,
+    "L_lo": 0.5155,
+    "L_hi": 0.7899,
+    "Fp": 0.0878,
+    "Fp_lo": 0.0641,
+    "Fp_hi": 0.1192,
+    "J": 0.2455,
+    "J_lo": 0.1184,
+    "J_hi": 0.3985,
+    "p_signal": 0.0,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": null,
+    "auroc_raw": 0.6729
+   },
+   "Qwen 80B Inst": {
+    "n_err": 45,
+    "accuracy": 0.9004,
+    "L": 0.7333,
+    "L_lo": 0.5896,
+    "L_hi": 0.8404,
+    "Fp": 0.0516,
+    "Fp_lo": 0.034,
+    "Fp_hi": 0.0776,
+    "J": 0.2151,
+    "J_lo": 0.1049,
+    "J_hi": 0.3599,
+    "p_signal": 0.0,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": null,
+    "auroc_raw": 0.6075
+   },
+   "Qwen 80B Think": {
+    "n_err": 27,
+    "accuracy": 0.9403,
+    "L": 0.963,
+    "L_lo": 0.8172,
+    "L_hi": 0.9934,
+    "Fp": 0.0071,
+    "Fp_lo": 0.0024,
+    "Fp_hi": 0.0205,
+    "J": 0.03,
+    "J_lo": -0.0033,
+    "J_hi": 0.1759,
+    "p_signal": 0.1191,
+    "tier": "Indeterminate",
+    "reason": "blanket_confidence_suspected",
+    "flags": "fixed_responding",
+    "auroc_raw": 0.5117
+   },
+   "Qwen Coder 480B": {
+    "n_err": 40,
+    "accuracy": 0.9115,
+    "L": 0.575,
+    "L_lo": 0.422,
+    "L_hi": 0.7149,
+    "Fp": 0.1578,
+    "Fp_lo": 0.1258,
+    "Fp_hi": 0.1961,
+    "J": 0.2672,
+    "J_lo": 0.1222,
+    "J_hi": 0.4236,
+    "p_signal": 0.0001,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": null,
+    "auroc_raw": 0.691
+   },
+   "Sonnet 4.6": {
+    "n_err": 32,
+    "accuracy": 0.9292,
+    "L": 0.7188,
+    "L_lo": 0.5463,
+    "L_hi": 0.8444,
+    "Fp": 0.0333,
+    "Fp_lo": 0.02,
+    "Fp_hi": 0.0552,
+    "J": 0.2479,
+    "J_lo": 0.1204,
+    "J_hi": 0.4209,
+    "p_signal": 0.0,
+    "tier": "Valid",
+    "reason": "signal_detected",
+    "flags": null,
+    "auroc_raw": 0.7619
+   }
+  }
+ },
+ "battery6": {
+  "tiers": {
+   "Valid": 15,
+   "Indeterminate": 4,
+   "Invalid": 0,
+   "Uncertifiable": 1
+  },
+  "differs": {
+   "GPT-5.4 nano": [
+    "Indeterminate",
+    "Valid"
+   ],
+   "Gemma 3 1B": [
+    "Valid",
+    "Indeterminate"
+   ]
+  }
+ },
+ "atlas": {
+  "n_models": 33,
+  "n_scored": 46157,
+  "by_cut": {
+   "50": {
+    "Valid": 9,
+    "Indeterminate": 0,
+    "Invalid": 24,
+    "Uncertifiable": 0
+   },
+   "70": {
+    "Valid": 13,
+    "Indeterminate": 1,
+    "Invalid": 19,
+    "Uncertifiable": 0
+   },
+   "80": {
+    "Valid": 18,
+    "Indeterminate": 2,
+    "Invalid": 13,
+    "Uncertifiable": 0
+   },
+   "90": {
+    "Valid": 28,
+    "Indeterminate": 1,
+    "Invalid": 4,
+    "Uncertifiable": 0
+   },
+   "95": {
+    "Valid": 31,
+    "Indeterminate": 1,
+    "Invalid": 1,
+    "Uncertifiable": 0
+   },
+   "100": {
+    "Valid": 25,
+    "Indeterminate": 2,
+    "Invalid": 6,
+    "Uncertifiable": 0
+   }
+  },
+  "reasons_by_cut": {
+   "50": {
+    "blanket_confidence": 24,
+    "signal_detected": 9
+   },
+   "70": {
+    "blanket_confidence": 19,
+    "signal_detected": 13,
+    "blanket_confidence_suspected": 1
+   },
+   "80": {
+    "signal_detected": 18,
+    "blanket_confidence": 13,
+    "blanket_confidence_suspected": 2
+   },
+   "90": {
+    "signal_detected": 28,
+    "blanket_confidence": 4,
+    "blanket_confidence_suspected": 1
+   },
+   "95": {
+    "signal_detected": 31,
+    "blanket_confidence": 1,
+    "no_detectable_sensitivity": 1
+   },
+   "100": {
+    "signal_detected": 25,
+    "blanket_withdrawal": 5,
+    "inversion_suspected": 1,
+    "blanket_confidence": 1,
+    "no_detectable_sensitivity": 1
+   }
+  },
+  "auroc_raw": {
+   "mean": 0.697,
+   "min": 0.4977,
+   "max": 0.8062
+  },
+  "v03_changes": 18,
+  "cells": 198,
+  "valid_J_lt_10": 35,
+  "valid_cells": 124
+ },
+ "mmlu500": {
+  "n_models": 20,
+  "n_scored": 8568,
+  "by_cut": {
+   "50": {
+    "Valid": 4,
+    "Indeterminate": 7,
+    "Invalid": 9,
+    "Uncertifiable": 0
+   },
+   "70": {
+    "Valid": 7,
+    "Indeterminate": 7,
+    "Invalid": 6,
+    "Uncertifiable": 0
+   },
+   "80": {
+    "Valid": 9,
+    "Indeterminate": 6,
+    "Invalid": 5,
+    "Uncertifiable": 0
+   },
+   "90": {
+    "Valid": 13,
+    "Indeterminate": 4,
+    "Invalid": 3,
+    "Uncertifiable": 0
+   },
+   "95": {
+    "Valid": 16,
+    "Indeterminate": 3,
+    "Invalid": 1,
+    "Uncertifiable": 0
+   },
+   "100": {
+    "Valid": 10,
+    "Indeterminate": 4,
+    "Invalid": 6,
+    "Uncertifiable": 0
+   }
+  },
+  "reasons_by_cut": {
+   "50": {
+    "blanket_confidence": 9,
+    "blanket_confidence_suspected": 7,
+    "signal_detected": 4
+   },
+   "70": {
+    "signal_detected": 7,
+    "blanket_confidence_suspected": 7,
+    "blanket_confidence": 6
+   },
+   "80": {
+    "signal_detected": 9,
+    "blanket_confidence": 5,
+    "no_detectable_sensitivity": 3,
+    "blanket_confidence_suspected": 3
+   },
+   "90": {
+    "signal_detected": 13,
+    "no_detectable_sensitivity": 4,
+    "blanket_confidence": 3
+   },
+   "95": {
+    "signal_detected": 16,
+    "no_detectable_sensitivity": 3,
+    "blanket_confidence": 1
+   },
+   "100": {
+    "signal_detected": 10,
+    "blanket_withdrawal": 5,
+    "no_detectable_sensitivity": 4,
+    "blanket_confidence": 1
+   }
+  },
+  "auroc_raw": {
+   "mean": 0.6838,
+   "min": 0.4997,
+   "max": 0.8369
+  },
+  "v03_changes": 14,
+  "cells": 120,
+  "valid_J_lt_10": 15,
+  "valid_cells": 59
+ },
+ "mmlu500_no50": {
+  "n_models": 20,
+  "n_scored": 8561,
+  "by_cut": {
+   "50": {
+    "Valid": 4,
+    "Indeterminate": 7,
+    "Invalid": 9,
+    "Uncertifiable": 0
+   },
+   "70": {
+    "Valid": 6,
+    "Indeterminate": 8,
+    "Invalid": 6,
+    "Uncertifiable": 0
+   },
+   "80": {
+    "Valid": 8,
+    "Indeterminate": 7,
+    "Invalid": 5,
+    "Uncertifiable": 0
+   },
+   "90": {
+    "Valid": 13,
+    "Indeterminate": 4,
+    "Invalid": 3,
+    "Uncertifiable": 0
+   },
+   "95": {
+    "Valid": 16,
+    "Indeterminate": 3,
+    "Invalid": 1,
+    "Uncertifiable": 0
+   },
+   "100": {
+    "Valid": 10,
+    "Indeterminate": 4,
+    "Invalid": 6,
+    "Uncertifiable": 0
+   }
+  },
+  "reasons_by_cut": {
+   "50": {
+    "blanket_confidence": 9,
+    "blanket_confidence_suspected": 7,
+    "signal_detected": 4
+   },
+   "70": {
+    "blanket_confidence_suspected": 8,
+    "signal_detected": 6,
+    "blanket_confidence": 6
+   },
+   "80": {
+    "signal_detected": 8,
+    "blanket_confidence": 5,
+    "no_detectable_sensitivity": 4,
+    "blanket_confidence_suspected": 3
+   },
+   "90": {
+    "signal_detected": 13,
+    "no_detectable_sensitivity": 4,
+    "blanket_confidence": 3
+   },
+   "95": {
+    "signal_detected": 16,
+    "no_detectable_sensitivity": 3,
+    "blanket_confidence": 1
+   },
+   "100": {
+    "signal_detected": 10,
+    "blanket_withdrawal": 5,
+    "no_detectable_sensitivity": 4,
+    "blanket_confidence": 1
+   }
+  },
+  "auroc_raw": {
+   "mean": 0.682,
+   "min": 0.4997,
+   "max": 0.8369
+  },
+  "v03_changes": 15,
+  "cells": 120
+ },
+ "mmlu500_50s_changes": {
+  "google/gemini-2.5-flash@70": [
+   "Valid",
+   "Indeterminate"
+  ],
+  "google/gemini-2.5-flash@80": [
+   "Valid",
+   "Indeterminate"
+  ]
+ },
+ "name_map_mmlu500_to_atlas": {
+  "anthropic/claude-haiku-4-5@20251001": "anthropic/claude-haiku-4-5@20251001",
+  "anthropic/claude-opus-4-6@default": "anthropic/claude-opus-4-6@default",
+  "anthropic/claude-sonnet-4-6@default": "anthropic/claude-sonnet-4-6@default",
+  "deepseek-ai/deepseek-r1-0528": "deepseek-ai/deepseek-r1-0528",
+  "deepseek-ai/deepseek-v3.2": "deepseek-ai/deepseek-v3.2",
+  "google/gemini-2.5-flash": "google/gemini-2.5-flash",
+  "google/gemini-2.5-pro": "google/gemini-2.5-pro",
+  "google/gemini-3-flash-preview": "google/gemini-3-flash-preview",
+  "google/gemini-3.1-pro-preview": "google/gemini-3.1-pro-preview",
+  "google/gemma-3-12b": "google/gemma-3-12b",
+  "google/gemma-3-1b": "google/gemma-3-1b",
+  "google/gemma-3-27b": "google/gemma-3-27b",
+  "openai/gpt-5.4-2026-03-05": "openai/gpt-5.4-2026-03-05",
+  "openai/gpt-5.4-mini-2026-03-17": "openai/gpt-5.4-mini-2026-03-17",
+  "openai/gpt-5.4-nano-2026-03-17": "openai/gpt-5.4-nano-2026-03-17",
+  "qwen/qwen3-235b-a22b-instruct-2507": "qwen/qwen3-235b-a22b-instruct-2507",
+  "qwen/qwen3-coder-480b-a35b-instruct": "qwen/qwen3-coder-480b-a35b-instruct",
+  "qwen/qwen3-next-80b-a3b-instruct": "qwen/qwen3-next-80b-a3b-instruct",
+  "qwen/qwen3-next-80b-a3b-thinking": "qwen/qwen3-next-80b-a3b-thinking",
+  "zai/glm-5": "zai/glm-5"
+ },
+ "yang": {
+  "n_cells_all": 1860,
+  "n_methods": 17,
+  "n_models": 11,
+  "n_benches": 10,
+  "n_scored_all": 1874565,
+  "basic": {
+   "cells": 110,
+   "n_scored": 112909,
+   "by_cut": {
+    "50": {
+     "Valid": 2,
+     "Indeterminate": 14,
+     "Invalid": 94,
+     "Uncertifiable": 0
+    },
+    "70": {
+     "Valid": 5,
+     "Indeterminate": 15,
+     "Invalid": 90,
+     "Uncertifiable": 0
+    },
+    "80": {
+     "Valid": 22,
+     "Indeterminate": 14,
+     "Invalid": 74,
+     "Uncertifiable": 0
+    },
+    "90": {
+     "Valid": 58,
+     "Indeterminate": 21,
+     "Invalid": 31,
+     "Uncertifiable": 0
+    },
+    "95": {
+     "Valid": 65,
+     "Indeterminate": 20,
+     "Invalid": 25,
+     "Uncertifiable": 0
+    },
+    "100": {
+     "Valid": 46,
+     "Indeterminate": 26,
+     "Invalid": 38,
+     "Uncertifiable": 0
+    }
+   },
+   "reasons_by_cut": {
+    "50": {
+     "blanket_confidence": 94,
+     "blanket_confidence_suspected": 14,
+     "signal_detected": 2
+    },
+    "70": {
+     "blanket_confidence": 90,
+     "blanket_confidence_suspected": 13,
+     "signal_detected": 5,
+     "no_detectable_sensitivity": 1,
+     "inversion_suspected": 1
+    },
+    "80": {
+     "blanket_confidence": 73,
+     "signal_detected": 22,
+     "blanket_confidence_suspected": 11,
+     "inversion_suspected": 2,
+     "no_detectable_sensitivity": 1,
+     "inversion": 1
+    },
+    "90": {
+     "signal_detected": 58,
+     "blanket_confidence": 31,
+     "no_detectable_sensitivity": 8,
+     "blanket_confidence_suspected": 7,
+     "inversion_suspected": 6
+    },
+    "95": {
+     "signal_detected": 65,
+     "blanket_confidence": 20,
+     "no_detectable_sensitivity": 16,
+     "inversion_suspected": 4,
+     "blanket_withdrawal": 3,
+     "inversion": 2
+    },
+    "100": {
+     "signal_detected": 46,
+     "blanket_withdrawal": 35,
+     "no_detectable_sensitivity": 16,
+     "inversion_suspected": 10,
+     "inversion": 3
+    }
+   },
+   "auroc_mean": 0.6075,
+   "auroc_range": [
+    0.4295,
+    0.8887
+   ]
+  },
+  "all_by_cut": {
+   "50": {
+    "Valid": 227,
+    "Indeterminate": 298,
+    "Invalid": 1328,
+    "Uncertifiable": 7
+   },
+   "70": {
+    "Valid": 554,
+    "Indeterminate": 290,
+    "Invalid": 1009,
+    "Uncertifiable": 7
+   },
+   "80": {
+    "Valid": 858,
+    "Indeterminate": 318,
+    "Invalid": 677,
+    "Uncertifiable": 7
+   },
+   "90": {
+    "Valid": 1208,
+    "Indeterminate": 334,
+    "Invalid": 311,
+    "Uncertifiable": 7
+   },
+   "95": {
+    "Valid": 963,
+    "Indeterminate": 369,
+    "Invalid": 521,
+    "Uncertifiable": 7
+   },
+   "100": {
+    "Valid": 594,
+    "Indeterminate": 416,
+    "Invalid": 844,
+    "Uncertifiable": 6
+   }
+  },
+  "valid90_by_method": {
+   "min": 0.4455,
+   "max": 0.8182,
+   "argmin": "basic_1s_scoreletter",
+   "argmax": "tian2023just_1s_top1"
+  },
+  "valid90_by_model": {
+   "min": 0.1765,
+   "max": 0.9412,
+   "argmin": "qwen1.5-7b-chat",
+   "argmax": "qwen1.5-110b-chat"
+  },
+  "valid90_by_bench": {
+   "min": 0.3333,
+   "max": 0.8172,
+   "argmin": "logi_qa",
+   "argmax": "trivia_qa"
+  },
+  "invalid90_by_method": {
+   "min": 0.049,
+   "max": 0.4091
+  },
+  "auroc_by_tier90": {
+   "Indeterminate": 0.5401,
+   "Invalid": 0.536,
+   "Uncertifiable": 0.7711,
+   "Valid": 0.6548
+  },
+  "v03_changes_all": 1899,
+  "v03_to_v04_all": {
+   "Indeterminate->Valid": 3,
+   "Invalid->Indeterminate": 774,
+   "Invalid->Uncertifiable": 2,
+   "Invalid->Valid": 1076,
+   "Valid->Indeterminate": 44
+  }
+ },
+ "oc": {
+  "size_max": 0.0258,
+  "size_range": [
+   0.0,
+   0.0258
+  ],
+  "size_cells": 95,
+  "size_full_max": 0.0374,
+  "size_full_max_where": {
+   "N": 5000.0,
+   "errors": 10.0,
+   "keep": 0.28,
+   "false_valid": 0.0374
+  },
+  "size_full_share_gt_025": 0.0726,
+  "size_full_max_keep_ge_50": 0.0325,
+  "size_full_max_keep_ge_50_N_le_1500": 0.0298,
+  "size_full_max_by_N": {
+   "226": 0.0254,
+   "452": 0.0303,
+   "1000": 0.0344,
+   "1500": 0.0358,
+   "5000": 0.0374
+  },
+  "false_invalid_max_by_L": {
+   "0.9": 0.0264,
+   "0.92": 0.1204,
+   "0.93": 0.2291,
+   "0.94": 0.3929
+  },
+  "errors_needed_integer": [
+   35,
+   53,
+   69,
+   84,
+   99,
+   113,
+   127,
+   140
+  ],
+  "multiplicity_any_mean": 0.0629,
+  "multiplicity_any_max": 0.115,
+  "multiplicity_single_cut_mean": 0.0134,
+  "agreement_by_N": {
+   "226": {
+    "mean": 0.5645,
+    "n_ge_90": 1
+   },
+   "452": {
+    "mean": 0.7429,
+    "n_ge_90": 7
+   },
+   "1000": {
+    "mean": 0.8349,
+    "n_ge_90": 10
+   },
+   "2000": {
+    "mean": 0.9103,
+    "n_ge_90": 16
+   },
+   "5000": {
+    "mean": 0.953,
+    "n_ge_90": 17
+   }
+  },
+  "binarisation_loss_by_cut": {
+   "50": {
+    "mean": 0.1827,
+    "max": 0.303
+   },
+   "70": {
+    "mean": 0.1695,
+    "max": 0.2763
+   },
+   "80": {
+    "mean": 0.1345,
+    "max": 0.2558
+   },
+   "90": {
+    "mean": 0.079,
+    "max": 0.1977
+   },
+   "95": {
+    "mean": 0.0578,
+    "max": 0.1687
+   },
+   "100": {
+    "mean": 0.1141,
+    "max": 0.3122
+   }
+  },
+  "cmh": {
+   "Claude Haiku 4.5": {
+    "or_mh": 7.0743,
+    "p_one_sided": 0.0,
+    "strata": 5
+   },
+   "DeepSeek V3.2": {
+    "or_mh": 2.4882,
+    "p_one_sided": 0.0123,
+    "strata": 5
+   },
+   "GLM-5": {
+    "or_mh": 27.9659,
+    "p_one_sided": 0.0,
+    "strata": 3
+   },
+   "GPT-5.4": {
+    "or_mh": 4.8116,
+    "p_one_sided": 0.0,
+    "strata": 5
+   },
+   "GPT-5.4 mini": {
+    "or_mh": 3.4319,
+    "p_one_sided": 0.0003,
+    "strata": 4
+   },
+   "GPT-5.4 nano": {
+    "or_mh": 1.391,
+    "p_one_sided": 0.092,
+    "strata": 5
+   },
+   "Gemini 2.5 Flash": {
+    "or_mh": 45.0144,
+    "p_one_sided": 0.0,
+    "strata": 2
+   },
+   "Gemini 3 Flash": {
+    "or_mh": 3.2343,
+    "p_one_sided": 0.0733,
+    "strata": 4
+   },
+   "Gemini 3.1 Pro": {
+    "or_mh": 1.4439,
+    "p_one_sided": 0.3725,
+    "strata": 3
+   },
+   "Gemma 3 12B": {
+    "or_mh": 2.5744,
+    "p_one_sided": 0.0003,
+    "strata": 5
+   },
+   "Gemma 3 1B": {
+    "or_mh": 1.4537,
+    "p_one_sided": 0.0786,
+    "strata": 4
+   },
+   "Gemma 3 27B": {
+    "or_mh": 3.6288,
+    "p_one_sided": 0.0065,
+    "strata": 4
+   },
+   "Opus 4.6": {
+    "or_mh": 3.5782,
+    "p_one_sided": 0.0185,
+    "strata": 3
+   },
+   "Qwen 235B": {
+    "or_mh": 4.8824,
+    "p_one_sided": 0.0,
+    "strata": 5
+   },
+   "Qwen 80B Inst": {
+    "or_mh": 7.5767,
+    "p_one_sided": 0.0,
+    "strata": 5
+   },
+   "Qwen 80B Think": {
+    "or_mh": 4.3685,
+    "p_one_sided": 0.0957,
+    "strata": 3
+   },
+   "Qwen Coder 480B": {
+    "or_mh": 3.2604,
+    "p_one_sided": 0.0001,
+    "strata": 5
+   },
+   "Sonnet 4.6": {
+    "or_mh": 10.885,
+    "p_one_sided": 0.0,
+    "strata": 5
+   }
+  },
+  "size_max_where": {
+   "N": 1500.0,
+   "accuracy": 0.7,
+   "keep": 0.9,
+   "false_valid": 0.0258
+  },
+  "power_examples": {
+   "N452_acc0.9_J0.05": 0.2473,
+   "N452_acc0.9_J0.1": 0.6132,
+   "N452_acc0.9_J0.2": 0.9665,
+   "N452_acc0.95_J0.05": 0.1618,
+   "N452_acc0.95_J0.1": 0.4029,
+   "N452_acc0.95_J0.2": 0.8191,
+   "N452_acc0.97_J0.05": 0.1185,
+   "N452_acc0.97_J0.1": 0.2801,
+   "N452_acc0.97_J0.2": 0.6345,
+   "N1000_acc0.9_J0.05": 0.4708,
+   "N1000_acc0.9_J0.1": 0.9097,
+   "N1000_acc0.9_J0.2": 0.9998,
+   "N1000_acc0.95_J0.05": 0.285,
+   "N1000_acc0.95_J0.1": 0.6844,
+   "N1000_acc0.95_J0.2": 0.9836,
+   "N1000_acc0.97_J0.05": 0.1905,
+   "N1000_acc0.97_J0.1": 0.4889,
+   "N1000_acc0.97_J0.2": 0.9033,
+   "N1500_acc0.9_J0.05": 0.6263,
+   "N1500_acc0.9_J0.1": 0.9787,
+   "N1500_acc0.9_J0.2": 1.0,
+   "N1500_acc0.95_J0.05": 0.3936,
+   "N1500_acc0.95_J0.1": 0.8399,
+   "N1500_acc0.95_J0.2": 0.9986,
+   "N1500_acc0.97_J0.05": 0.274,
+   "N1500_acc0.97_J0.1": 0.6591,
+   "N1500_acc0.97_J0.2": 0.9771,
+   "N3000_acc0.9_J0.05": 0.8904,
+   "N3000_acc0.9_J0.1": 0.9998,
+   "N3000_acc0.9_J0.2": 1.0,
+   "N3000_acc0.95_J0.05": 0.6543,
+   "N3000_acc0.95_J0.1": 0.9839,
+   "N3000_acc0.95_J0.2": 1.0,
+   "N3000_acc0.97_J0.05": 0.4648,
+   "N3000_acc0.97_J0.1": 0.9027,
+   "N3000_acc0.97_J0.2": 0.9998
+  },
+  "power_invalid_examples": {
+   "L1.0_e35": 1.0,
+   "L1.0_e50": 1.0,
+   "L1.0_e71": 1.0,
+   "L1.0_e100": 1.0,
+   "L1.0_e150": 1.0,
+   "L1.0_e500": 1.0,
+   "L1.0_e1000": 1.0,
+   "L0.99_e35": 0.7034,
+   "L0.99_e50": 0.605,
+   "L0.99_e71": 0.9654,
+   "L0.99_e100": 0.9966,
+   "L0.99_e150": 0.9999,
+   "L0.99_e500": 1.0,
+   "L0.99_e1000": 1.0,
+   "L0.98_e35": 0.4931,
+   "L0.98_e50": 0.3642,
+   "L0.98_e71": 0.8301,
+   "L0.98_e100": 0.9492,
+   "L0.98_e150": 0.989,
+   "L0.98_e500": 1.0,
+   "L0.98_e1000": 1.0,
+   "L0.97_e35": 0.3444,
+   "L0.97_e50": 0.2181,
+   "L0.97_e71": 0.641,
+   "L0.97_e100": 0.8179,
+   "L0.97_e150": 0.9166,
+   "L0.97_e500": 0.9945,
+   "L0.97_e1000": 0.9998,
+   "L0.96_e35": 0.2396,
+   "L0.96_e50": 0.1299,
+   "L0.96_e71": 0.4559,
+   "L0.96_e100": 0.6289,
+   "L0.96_e150": 0.7468,
+   "L0.96_e500": 0.8924,
+   "L0.96_e1000": 0.9509,
+   "L0.95_e35": 0.1661,
+   "L0.95_e50": 0.0769,
+   "L0.95_e71": 0.3045,
+   "L0.95_e100": 0.436,
+   "L0.95_e150": 0.5228,
+   "L0.95_e500": 0.5529,
+   "L0.95_e1000": 0.5375
+  },
+  "items_needed_90": {
+   "L1.0_acc0.8": 175,
+   "L1.0_acc0.9": 350,
+   "L1.0_acc0.95": 700,
+   "L0.99_acc0.8": 345,
+   "L0.99_acc0.9": 690,
+   "L0.99_acc0.95": 1380,
+   "L0.98_acc0.8": 495,
+   "L0.98_acc0.9": 990,
+   "L0.98_acc0.95": 1980,
+   "L0.97_acc0.8": 800,
+   "L0.97_acc0.9": 1600,
+   "L0.97_acc0.95": 3200,
+   "L0.96_acc0.8": 3600,
+   "L0.96_acc0.9": 7200,
+   "L0.96_acc0.95": 14400,
+   "L0.95_acc0.8": null,
+   "L0.95_acc0.9": null,
+   "L0.95_acc0.95": null
+  },
+  "agreement_low452": [
+   [
+    "DeepSeek-R1",
+    0.493
+   ],
+   [
+    "GPT-5.4 nano",
+    0.493
+   ],
+   [
+    "Gemma 3 1B",
+    0.545
+   ],
+   [
+    "Opus 4.6",
+    0.546
+   ],
+   [
+    "Gemma 3 27B",
+    0.547
+   ]
+  ],
+  "cmh_valid_not_sig": [
+   "Gemma 3 1B"
+  ],
+  "size_compare": {
+   "newcombe_max": 0.0884,
+   "midp_max": 0.0303
+  }
+ }
+}

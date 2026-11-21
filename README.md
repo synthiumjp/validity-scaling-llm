@@ -10,7 +10,7 @@
 >
 > - **DeepSeek-R1 was not "inverted".** 71 of its 72 responses on the free-text (prospective) track were declines, which the harness logged as KEEP+BET and the grader scored as errors. The reported r = −.80, RBS = +.87 and the "85% → 11% accuracy at 10% coverage" collapse came from those rows. Corrected, R1 withdraws 95% of its correct answers (blanket withdrawal).
 > - **The free-text track is mis-graded** by substring matching, in both directions. It is excluded from the primary analysis.
-> - **The published tiers were not produced by the screening tool** as released. The corrected tool is `validity-screen` 0.3.0.
+> - **The published tiers were not produced by the screening tool** as released. The v2 paper uses `validity-screen` 0.3.0; the current release is 0.4.1 (see below).
 > - **The selective-prediction "criterion validation"** used a criterion computed from the same items and probe as the screen. It is reported only descriptively.
 > - **The Yang et al. (2024) reanalysis was not computed from that study's data.** The hard-coded results table has been removed and replaced by an analysis of the released predictions.
 >
@@ -43,17 +43,22 @@ Full table: `paper/v2/tab_battery.tex` and `analysis/v2/out/per_model.csv`.
 ## The screening tool
 
 ```bash
-pip install validity-screen   # 0.3.0
+pip install validity-screen   # 0.4.1
 ```
 
 ```python
-from validity_screen import screen, binarise
-result = screen(correct, keep, answered=answered, model_name="My Model")
-print(result.tier)        # Valid / Indeterminate / Invalid / Uncertifiable
+from validity_screen import screen
+# binary KEEP/WITHDRAW: screen(correct, keep); 0-100 confidence: state the cut point
+result = screen(correct, confidence, cut=90, answered=answered, model_name="My Model")
+print(result.tier, result.reason, result.flags)
 print(result.vrs_table())
 ```
 
-Source, tests and changelog: [`screen/`](screen/). Results produced with 0.1.0 should be rerun.
+Source, tests, changelog and the decision record: [`screen/`](screen/).
+
+**0.4 changes verdicts.** Invalid now means a fixed response set in either direction (blanket confidence or blanket withdrawal, each certified), and withdrawing many correct answers is a low-coverage flag rather than invalidity. Valid needs a significant signal (one-sided Fisher mid-p test of J > 0). Every Indeterminate gives a reason. The reasons for each change are in [`screen/DECISIONS.md`](screen/DECISIONS.md).
+
+Under 0.4.1 the battery gives 15 Valid, 4 Indeterminate and 1 Uncertifiable (DeepSeek-R1, 6 errors). The v2 paper's tiers above were produced with 0.3.0. The 0.4.1 rescreen of every dataset and the screen's operating characteristics are in [`analysis/v4/`](analysis/v4/), which supports the next version of the paper (in preparation).
 
 ## Reproducing the paper
 
@@ -71,9 +76,10 @@ This regenerates every number (`analysis/v2/out/*.json`, `*.csv`), table and fig
 validity-scaling-llm/
 ├── README.md
 ├── data/csvs/                 # 120 battery CSVs (20 models × 6 tracks)
-├── screen/                    # validity-screen 0.3.0 (package source, tests, changelog)
+├── screen/                    # validity-screen 0.4.1 (package source, tests, changelog, decision record)
 ├── analysis/
-│   ├── v2/                    # corrected analysis: run_all.sh and scripts; out/ = outputs
+│   ├── v4/                    # rescreen with 0.4.1 and operating characteristics (next paper version)
+│   ├── v2/                    # analysis for arXiv:2604.17714v2 (0.3.0): run_all.sh and scripts; out/ = outputs
 │   └── *.py                   # version 1 scripts (superseded, kept for the record)
 ├── paper/v2/                  # arXiv:2604.17714v2 source, tables, figures, PDF
 ├── cross-benchmark/

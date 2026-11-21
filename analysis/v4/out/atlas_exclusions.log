@@ -1,0 +1,10 @@
+{
+ "v1_rows": 47151,
+ "unparsed_answers": 13,
+ "parser_imputed_confidences": 985,
+ "parser_imputed_largest_model": "gpt-oss-120b",
+ "parser_imputed_largest_count": 980,
+ "removed_rows": 994,
+ "v2_rows": 46157,
+ "consistent": true
+}

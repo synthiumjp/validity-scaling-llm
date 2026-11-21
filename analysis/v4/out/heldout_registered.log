@@ -1,0 +1,33 @@
+model condition  n_trials  parse_rate  n_class_only    scoring  confirmatory  n_scored  n_err  accuracy  share_ge95     L  L_lo    Fp      J   J_lo  J_hi  p_signal  auroc_raw          tier                    reason                                      flags
+   M2       CAT       524       0.962           492 registered          True       504    494     0.020       0.002 0.828 0.792 0.000  0.172 -0.107 0.208     0.077      0.627 Indeterminate no_detectable_sensitivity                                           
+   M3       CAT       524       0.307            39 registered         False       161     56     0.652       0.050 0.732 0.604 0.000  0.268  0.163 0.396     0.000      0.594         Valid           signal_detected                                           
+   M4       CAT       524       0.998           506 registered          True       523    510     0.025       0.010 0.890 0.860 0.154 -0.044 -0.314 0.071     0.701      0.643 Indeterminate       inversion_suspected                                           
+   M5       CAT       524       0.960           443 registered          True       503    482     0.042       0.008 0.131 0.104 0.143  0.726  0.520 0.823     0.000      0.880         Valid           signal_detected                                           
+   M6       CAT       524       0.994           513 registered          True       521    517     0.008       0.000 0.646 0.604   NaN    NaN    NaN   NaN       NaN      0.913 Uncertifiable           too_few_correct                                           
+   M7       CAT       524       0.998           521 registered          True       523    522     0.002       0.159 0.962 0.942   NaN    NaN    NaN   NaN       NaN      0.575       Invalid        blanket_confidence                           fixed_responding
+   M8       CAT       524       0.135            26 registered         False        71     53     0.254       0.127 0.736 0.604 0.222  0.042 -0.209 0.229     0.376      0.605 Indeterminate no_detectable_sensitivity                                           
+   M2       NUM       524       0.954             0 registered          True       500    112     0.776       0.872 1.000 0.967 0.000  0.000 -0.010 0.033     0.500      0.657       Invalid        blanket_confidence                           fixed_responding
+   M3       NUM       524       0.899             0 registered          True       471     79     0.832       0.968 0.949 0.877 0.003  0.048  0.015 0.121     0.002      0.683         Valid           signal_detected fixed_responding|response_set_not_excluded
+   M4       NUM       524       0.985             0 registered          True       516    125     0.758       0.965 0.976 0.932 0.008  0.016 -0.005 0.061     0.094      0.575       Invalid        blanket_confidence                           fixed_responding
+   M5       NUM       524       0.996             0 registered          True       522    214     0.590       0.967 0.953 0.916 0.006  0.040  0.013 0.078     0.002      0.527       Invalid        blanket_confidence                           fixed_responding
+   M6       NUM       524       0.987             0 registered          True       517    147     0.716       0.956 0.986 0.952 0.003  0.011 -0.005 0.046     0.109      0.578       Invalid        blanket_confidence                           fixed_responding
+   M7       NUM       524       1.000             0 registered          True       524    128     0.756       0.964 1.000 0.971 0.000  0.000 -0.010 0.029     0.500      0.592       Invalid        blanket_confidence                           fixed_responding
+   M8       NUM       524       0.781             0 registered          True       409    169     0.587       0.724 0.976 0.941 0.000  0.024  0.002 0.059     0.014      0.669       Invalid        blanket_confidence                           fixed_responding
+{
+ "num_confirmatory_cells": 7,
+ "num_tiers": {
+  "Invalid": 6,
+  "Valid": 1
+ },
+ "num_reasons": {
+  "blanket_confidence": 6,
+  "signal_detected": 1
+ },
+ "cat_tiers": {
+  "Indeterminate": 3,
+  "Valid": 2,
+  "Uncertifiable": 1,
+  "Invalid": 1
+ },
+ "cat_confirmatory": 5
+}
